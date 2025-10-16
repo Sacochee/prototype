@@ -1,0 +1,100 @@
+.textIA {
+  display: block; /* indispensable si parent était inline */
+  position: relative; /* pour que ::after puisse être positionné par rapport au parent */
+  box-sizing: border-box;
+  background-color: inherit;
+
+}
+
+.textIA::before {
+  content: "";
+  position: absolute;
+  left: -20px;
+  top: 0;
+  right: 0; /* étire jusqu'à la largeur du parent */
+  bottom: 0;
+  width: 5px; /* couvre la hauteur du parent */
+  background-color: var(--trustBlue);
+  z-index: 1; /* derrière le contenu */
+  pointer-events: none;
+}
+
+.textIA::after {
+  content: "Text corrigé";
+  position: absolute;
+  color: var(--trustBlue);
+  width: fit-content;
+  font-size: 10px;
+  left: -60px;
+  align-self: center;
+  right: 0; /* étire jusqu'à la largeur du parent */
+ 
+  bottom: 50%;
+  top: 50%;
+
+  transform: rotate(-90deg);
+  z-index: 10; /* derrière le contenu */
+  pointer-events: none;
+}
+
+.TextIALaoding {
+  position: relative;
+  display: inline-block;
+
+  z-index: 1;
+}
+
+.TextIALaoding::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(255, 255, 255, 0.5); /*voile au-dessus du contenu */
+  /* backdrop-filter: blur(1px); */
+  z-index: 1;
+}
+
+.TextIALaoding::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 40px;
+  height: 40px;
+  margin: -20px 0 0 -20px;
+  border-radius: 50%;
+  border: 4px solid rgba(0, 0, 0, 0.1);
+  border-top-color: var(--trustBlue);
+  animation: spin 1s linear infinite;
+  z-index: 2;
+}
+
+.edit {
+  border-bottom: 2px dashed var(--trustBlue);
+}
+.add {
+  border-bottom: 2px solid green;
+}
+.del {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.del::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: red;
+}
+
+@keyframes spin {
+  from {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  to {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}

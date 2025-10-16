@@ -1,0 +1,19 @@
+[
+  ["Arial", "Arial, Helvetica, sans-serif"],
+  ["Helvetica", "Helvetica, Arial, sans-serif"],
+  ["Impact", "Impact, Charcoal, sans-serif"],
+  ["Tahoma", "Tahoma, Geneva, sans-serif"],
+  ["Trebuchet MS", "\"Trebuchet MS\", Helvetica, sans-serif"],
+  ["Verdana", "Verdana, Geneva, sans-serif"],
+
+  ["Garamond", "Garamond, serif"],
+  ["Georgia", "Georgia, serif"],
+  ["Times New Roman", "\"Times New Roman\", Times, serif"],
+
+  ["Consolas", "Consolas, \"Courier New\", monospace"],
+  ["Courier New", "\"Courier New\", Courier, monospace"],
+  ["Menlo", "Menlo, Monaco, monospace"],
+  ["Monaco", "Monaco, Menlo, monospace"],
+
+  ["Comic Sans MS", "\"Comic Sans MS\", cursive"]
+]

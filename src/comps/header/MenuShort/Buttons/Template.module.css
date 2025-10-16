@@ -1,0 +1,313 @@
+.button {
+  padding: 5px;
+  background-color: var(--gris2);
+  border: none;
+  border-radius: 5px;
+  min-width: 30px;
+  cursor: pointer;
+}
+
+.active {
+  background-color: var(--trustBlue15) !important;
+}
+
+.fontSizeBtn {
+  display: flex;
+  align-items: center;
+  position: relative;
+  justify-content: center;
+}
+
+.fontSizeBtn button {
+  padding: 5px;
+  background-color: var(--gris2);
+  border: none;
+  border-radius: 5px;
+
+  font-size: 20px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 23px;
+}
+.fontSizeList {
+  top: 30px;
+}
+.fontSizeList,
+.fontFamilyList {
+  position: absolute;
+
+  list-style: none;
+  padding: 0;
+  margin: 0;
+
+  cursor: pointer;
+
+  background-color: var(--white);
+  border-radius: 5px;
+  padding: 5px 0;
+}
+
+.fontFamilyList {
+  top: 35px;
+  text-align: start;
+  width: 200px;
+}
+
+.fontBtn {
+  width: 80px;
+}
+
+.linkPop {
+  border-radius: 5px;
+  padding: 10px;
+
+  background-color: var(--white);
+
+  display: flex;
+  align-items: center;
+  gap: 5px;
+
+  position: absolute;
+  top: 35px;
+  right: -10px;
+
+  box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.037);
+}
+
+.linkPop button {
+  border: none;
+  background-color: var(--gris2);
+  padding: 7px 10px;
+  border-radius: 5px;
+}
+
+.linkPop input {
+  border: 1px solid var(--gris2);
+  background-color: var(--white);
+  padding: 5px;
+}
+
+.fontText {
+  white-space: nowrap; /* empêche le retour à la ligne */
+  overflow: hidden; /* masque le texte qui déborde */
+  text-overflow: ellipsis;
+  width: 60px;
+  text-align: start;
+}
+
+.fontSizeList li {
+  padding: 5px 10px;
+  text-align: center;
+}
+
+.fontFamilyList li {
+  padding: 5px 10px;
+}
+
+.fontSizeInput {
+  width: 30px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: 1.5px solid black;
+  border-radius: 5px;
+
+  margin: 0 5px;
+}
+
+.colorBtn {
+  position: relative;
+}
+
+.fontColor {
+  width: 210px;
+  height: auto;
+  background-color: var(--white);
+
+  position: absolute;
+  top: 35px;
+  right: -10px;
+
+  padding: 7px;
+  border-radius: 10px;
+
+  box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.037);
+}
+
+.fontColor button {
+  border: none;
+  background-color: var(--white);
+  width: 100%;
+  text-align: start;
+  padding: 5px 10px;
+  border-radius: 5px;
+  margin-bottom: 7px;
+
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.fontColorList {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.fontColorList li {
+  border-radius: 50%;
+  border: 1px solid rgba(0, 0, 0, 0.107);
+
+  margin: 2px;
+  width: 15px;
+  height: 15px;
+  cursor: pointer;
+}
+
+.textAlignUl {
+  display: flex;
+  align-items: center;
+  padding: 5px;
+  border-radius: 5px;
+  list-style-type: none;
+  margin: 0;
+
+  position: absolute;
+  top: 35px;
+
+  background-color: var(--gris2);
+
+  box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.037);
+}
+
+.interligne,
+.interligne li {
+  list-style-type: none;
+  margin: 0;
+  font-size: 15px;
+  border-radius: 5px;
+
+  background-color: var(--gris1);
+}
+
+.interligne {
+  position: absolute;
+  top: 35px;
+  right: -20px;
+
+  box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.037);
+  width: 350px;
+  padding: 10px 0;
+}
+
+.hover{
+  background-color: var(--corporateBlue);
+  color: var(--white);
+  padding: 3px 5px;
+  
+
+  position: absolute;
+  top: 30px;
+  
+
+  border-radius: 3px;
+  font-size: 0.8em;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+  z-index: 10;
+  width: max-content;
+}
+
+.hoverContainer{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.textAlignUl li,
+.interligne li {
+  cursor: pointer;
+  height: 20px;
+  padding: 5px;
+  margin: 0;
+  border-radius: 5px;
+}
+
+.interligne li {
+  padding: 5px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 20px;
+}
+
+.TextAlignActive {
+  background-color: var(--trustBlue15);
+}
+
+.list button {
+  border: none;
+  background-color: transparent;
+  padding: 5px;
+  height: 30px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+
+
+  cursor: pointer;
+}
+
+.list button:first-child{
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+.list button:last-child{
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+
+  padding: 2px;
+}
+
+.list {
+  display: flex;
+  align-items: center;
+
+  min-width: 30px;
+  cursor: pointer;
+}
+
+@media (hover: hover) {
+  .button:hover,
+  .fontSizeList li:hover,
+  .fontFamilyList li:hover,
+  .fontSizeBtn button:hover,
+  .fontColor button:hover,
+  .linkPop button:hover,
+  .textAlignUl li:hover,
+  .interligne li:hover,
+  .list button:hover {
+    background-color: var(--gris3);
+  }
+
+  .fontColorList li:hover {
+    /* border-color: var(--corporateBlue); */
+    box-shadow: 0 0 12px 2px rgba(0, 0, 0, 0.25);
+    transform: scale(1.1);
+  }
+}

@@ -1,0 +1,2 @@
+export const CantEditWHilLoading = "ATTENTION : il est impossible de modifier ce contenu pendant son chargement."
+export const CantDelFully = "ATTENTION : la suppression complète de ce conteneur est impossible."

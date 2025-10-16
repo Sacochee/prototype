@@ -1,0 +1,16 @@
+.top {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.header {
+  position: fixed;
+  background-color: var(--gris1);
+  width: calc(100vw - 60px);
+
+  z-index: 99;
+
+  padding-top: 10px;
+  padding: 0 20px;
+}

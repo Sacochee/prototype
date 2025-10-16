@@ -1,0 +1,175 @@
+.OneBtns {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.all {
+  background-color: var(--gris2);
+  border: 1.5px solid var(--gris2);
+  border-radius: 10px;
+
+  display: flex;
+  align-items: center;
+
+  padding: 7px 14px;
+  gap: 5px;
+
+  text-transform: uppercase;
+  font-size: 12px;
+  color: var(--corporateBlue);
+}
+
+.show {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px 0;
+
+  font-size: 12px;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.show button {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  background-color: var(--gris1);
+  border: none;
+}
+
+.tow form div {
+  display: flex;
+  align-items: center;
+}
+
+.tow form label {
+  width: 200px;
+  font-size: 12px;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.tow form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  margin: 20px;
+}
+
+.tow select {
+  padding: 5px 10px;
+
+  border: none;
+
+  border-radius: 5px;
+  background-color: var(--gris1);
+}
+
+.tow select option {
+  background: var(--gris1);
+  color: var(--corporateBlue);
+
+  border: none;
+}
+
+.error {
+  color: #d41818;
+  font-size: 12px;
+  text-transform: uppercase;
+  padding-left: 30px;
+  text-align: start;
+  height: 30px;
+}
+
+/*tHREE*/
+
+.back {
+  display: flex;
+  align-items: center;
+
+  border: 1.5px solid var(--trustBlue);
+  border-radius: 10px;
+
+  background-color: var(--trustBlue);
+  color: var(--white);
+
+  padding: 7px 14px;
+  gap: 5px;
+
+  font-size: 13px;
+  text-transform: uppercase;
+  font-weight: 500;
+
+  display: flex;
+  align-items: center;
+}
+
+.back path {
+  fill: var(--white);
+}
+
+.line {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.reload{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  margin: 20px 0;
+}
+
+.reload button {
+  background-color: var(--gris2);
+  border: 1.5px solid var(--gris2);
+  border-radius: 10px;
+
+  display: flex;
+  align-items: center;
+
+  padding: 7px 14px;
+  gap: 5px;
+
+  text-transform: uppercase;
+  font-size: 12px;
+  color: var(--corporateBlue);
+
+  cursor: pointer;
+
+}
+
+@media (hover: hover) {
+  .all:hover {
+    background-color: var(--gris1);
+    cursor: pointer;
+    border-color: var(--corporateBlue);
+  }
+
+  .show button:hover {
+    text-decoration: underline;
+    cursor: pointer;
+  }
+
+  /* THREE */
+
+  .back:hover {
+    cursor: pointer;
+    color: var(--trustBlue);
+    background-color: var(--white);
+  }
+
+  .back:hover path {
+    fill: var(--trustBlue);
+  }
+
+  .reload button:hover{
+    background-color: var(--gris3);
+    border-color: var(--corporateBlue);
+  }
+}

@@ -1,0 +1,81 @@
+.btn {
+  display: flex;
+  align-items: center;
+
+  border: 1.5px solid var(--corporateBlue);
+  border-radius: 10px;
+
+  background-color: var(--corporateBlue);
+  color: var(--white);
+
+  padding: 7px 14px;
+  gap: 5px;
+
+  font-size: 13px;
+  text-transform: uppercase;
+  font-weight: 500;
+
+  display: flex;
+  align-items: center;
+}
+
+.btn:disabled {
+  opacity: 0.3;
+}
+.switch {
+  position: relative;
+
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+
+  width: 30px;
+  height: 15px;
+
+  background-color: var(--white);
+
+  border: 1px solid var(--trustBlue);
+  border-radius: 15px;
+
+  box-sizing: border-box;
+
+  cursor: pointer;
+}
+
+.switch::before {
+  position: absolute;
+
+  content: "";
+
+  width: 15px;
+  height: 15px;
+
+  box-sizing: border-box;
+
+  background-color: var(--white);
+  transition: transform 0.05s ease-in;
+  border-radius: 15px;
+
+  border: 1px solid var(--trustBlue);
+}
+.active::before {
+  transition: transform 0.05s ease-in;
+  transform: translateX(100%);
+
+}
+
+.active {
+  background-color: var(--trustBlue);
+}
+
+@media (hover: hover) {
+  .btn:not(:disabled):hover {
+    cursor: pointer;
+    color: var(--corporateBlue);
+    background-color: var(--white);
+  }
+
+  .btn:not(:disabled):hover path {
+    fill: var(--corporateBlue);
+  }
+}

@@ -1,0 +1,22 @@
+.head {
+  display: flex;
+  justify-content: flex-start;
+  background-color: var(--trustBlue);
+  padding: 5px 10px;
+  width: 330px;
+  box-sizing: border-box;
+  border-radius: 5px;
+
+  color: var(--white);
+}
+
+@media (hover:hover) {
+    .head:hover{
+        opacity: .7;
+        cursor: pointer;
+    }
+    .noBtn:hover{
+        opacity: 1;
+         cursor: initial;
+    }
+}

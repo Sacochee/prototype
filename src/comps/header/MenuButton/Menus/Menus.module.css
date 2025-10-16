@@ -1,0 +1,15 @@
+.window {
+    position: absolute;
+    background-color: #fff;
+    border-radius: 5px;
+    width: 300px;
+    max-height: 800px;
+    box-shadow: 0 0 12px 2px rgba(0, 0, 0, 0.25);
+    z-index: 20;
+}
+
+
+.window div:hover{
+    background-color: var(--gris2);
+    border-radius: 5px;
+}

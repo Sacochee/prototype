@@ -1,0 +1,53 @@
+.container {
+  position: relative;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 75px;
+  height: 75px;
+  overflow: hidden;
+}
+
+.main {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+
+  top: 0;
+  left: 0;
+
+
+  background-color: var(--white);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* HTML: <div class="loader"></div> */
+.loader {
+  width: 75px;
+  aspect-ratio: 1;
+  display: grid;
+  animation: l14 4s infinite;
+}
+.loader::before,
+.loader::after {
+  content: "";
+  grid-area: 1/1;
+  border: 8px solid;
+  border-radius: 50%;
+  border-color: var(--flashquizzGold) transparent transparent transparent;
+  mix-blend-mode: darken;
+  animation: l14 1s infinite linear;
+}
+.loader::after {
+  border-color: var(--flashquizzGold) transparent transparent transparent;
+  animation-direction: reverse;
+}
+@keyframes l14 {
+  100% {
+    transform: rotate(1turn);
+  }
+}

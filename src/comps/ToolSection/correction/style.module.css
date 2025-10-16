@@ -1,0 +1,49 @@
+.topName {
+  width: 330px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  font-weight: 600;
+  font-size: 15px;
+  margin: 10px 0;
+}
+
+.topName button {
+  border: 1px solid transparent;
+  border-radius: 5px;
+
+  background-color: var(--gris1);
+
+  color: #d41818;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+
+  padding: 4px 8px;
+
+  cursor: pointer;
+
+  font-size: 11px;
+  text-transform: uppercase;
+}
+
+
+.forceCursorInitial article {
+  cursor: initial !important;
+}
+
+.forceCursorInitial article:hover {
+  opacity: 1 !important;
+}
+
+
+@media (hover: hover) {
+  .topName button:hover {
+    border: 1px solid #d41818;
+    /* scale: 0.8; */
+  }
+ 
+}

@@ -1,0 +1,3041 @@
+{
+    "type": "doc",
+    "content": [
+        {
+            "type": "paragraph",
+            "attrs": {
+                "textAlign": "start",
+                "paddingTop": 0,
+                "paddingBottom": 0,
+                "textIndente": 0,
+                "lineHeight": 1.15,
+                "paddingLeft": 0,
+                "paddingRight": 0,
+                "id": "bda9c1ed-2618-48e6-b9d3-7c0294fe613b"
+            },
+            "content": [
+                {
+                    "type": "text",
+                    "text": "Ceci est un cours de droit avec des fautes de frappe, d’orthographe, de syntaxe, de grammaire, etc."
+                }
+            ]
+        },
+        {
+            "type": "paragraph",
+            "attrs": {
+                "textAlign": "start",
+                "paddingTop": 0,
+                "paddingBottom": 0,
+                "textIndente": 0,
+                "lineHeight": 1.15,
+                "paddingLeft": 0,
+                "paddingRight": 0,
+                "id": "bcc98871-b570-4595-8173-f28390ccd0a5"
+            }
+        },
+        {
+            "type": "paragraph",
+            "attrs": {
+                "textAlign": "start",
+                "paddingTop": 0,
+                "paddingBottom": 0,
+                "textIndente": 0,
+                "lineHeight": 1.15,
+                "paddingLeft": 0,
+                "paddingRight": 0,
+                "id": "5b38d6e6-3bba-4cd8-aac4-b2276a6abbe6"
+            },
+            "content": [
+                {
+                    "type": "text",
+                    "text": "Le but de ce prototype est de travailler sur les méthodes de correction des cours universitaires. La correction, au sens large, inclura à terme la mise en page, la génération de plans, etc."
+                }
+            ]
+        },
+        {
+            "type": "paragraph",
+            "attrs": {
+                "textAlign": "start",
+                "paddingTop": 0,
+                "paddingBottom": 0,
+                "textIndente": 0,
+                "lineHeight": 1.15,
+                "paddingLeft": 0,
+                "paddingRight": 0,
+                "id": "a6103d3d-16d9-4b19-b3b7-2fdeb00126a3"
+            }
+        },
+        {
+            "type": "paragraph",
+            "attrs": {
+                "textAlign": "start",
+                "paddingTop": 0,
+                "paddingBottom": 0,
+                "textIndente": 0,
+                "lineHeight": 1.15,
+                "paddingLeft": 0,
+                "paddingRight": 0,
+                "id": "cb9c7cac-d869-46eb-a81a-bb3d49396981"
+            },
+            "content": [
+                {
+                    "type": "text",
+                    "text": "À l’heure actuelle, il n’y a que la correction des fautes."
+                }
+            ]
+        },
+        {
+            "type": "paragraph",
+            "attrs": {
+                "textAlign": "start",
+                "paddingTop": 0,
+                "paddingBottom": 0,
+                "textIndente": 0,
+                "lineHeight": 1.15,
+                "paddingLeft": 0,
+                "paddingRight": 0,
+                "id": "22c7c7b6-6549-42eb-a56f-63fb16fcedcc"
+            }
+        },
+        {
+            "type": "paragraph",
+            "attrs": {
+                "textAlign": "start",
+                "paddingTop": 0,
+                "paddingBottom": 0,
+                "textIndente": 0,
+                "lineHeight": 1.15,
+                "paddingLeft": 0,
+                "paddingRight": 0,
+                "id": "3885d4df-1ec0-4258-8a15-5e5394325c5b"
+            },
+            "content": [
+                {
+                    "type": "text",
+                    "text": "Comment corriger :"
+                }
+            ]
+        },
+        {
+            "type": "paragraph",
+            "attrs": {
+                "textAlign": "start",
+                "paddingTop": 0,
+                "paddingBottom": 0,
+                "textIndente": 0,
+                "lineHeight": 1.15,
+                "paddingLeft": 0,
+                "paddingRight": 0,
+                "id": "e76c9303-cd5d-4766-b81a-4b234d59db46"
+            },
+            "content": [
+                {
+                    "type": "text",
+                    "text": "1. Utiliser les outils"
+                }
+            ]
+        },
+        {
+            "type": "paragraph",
+            "attrs": {
+                "textAlign": "start",
+                "paddingTop": 0,
+                "paddingBottom": 0,
+                "textIndente": 0,
+                "lineHeight": 1.15,
+                "paddingLeft": 0,
+                "paddingRight": 0,
+                "id": "d37f8264-6294-4daa-b052-318997cb1e0e"
+            },
+            "content": [
+                {
+                    "type": "text",
+                    "text": "2. Corriger le texte"
+                }
+            ]
+        },
+        {
+            "type": "paragraph",
+            "attrs": {
+                "textAlign": "start",
+                "paddingTop": 0,
+                "paddingBottom": 0,
+                "textIndente": 0,
+                "lineHeight": 1.15,
+                "paddingLeft": 0,
+                "paddingRight": 0,
+                "id": "2a993910-97ac-4f5e-b246-d6040fb1a495"
+            },
+            "content": [
+                {
+                    "type": "text",
+                    "text": "3. Sélectionner la zone à corriger"
+                }
+            ]
+        },
+        {
+            "type": "paragraph",
+            "attrs": {
+                "textAlign": "start",
+                "paddingTop": 0,
+                "paddingBottom": 0,
+                "textIndente": 0,
+                "lineHeight": 1.15,
+                "paddingLeft": 0,
+                "paddingRight": 0,
+                "id": "f212558d-76de-4363-94c5-3ef757fbd1ac"
+            },
+            "content": [
+                {
+                    "type": "text",
+                    "text": "4. Sélectionner les paramètres (non disponible pour l’instant)"
+                }
+            ]
+        },
+        {
+            "type": "paragraph",
+            "attrs": {
+                "textAlign": "start",
+                "paddingTop": 0,
+                "paddingBottom": 0,
+                "textIndente": 0,
+                "lineHeight": 1.15,
+                "paddingLeft": 0,
+                "paddingRight": 0,
+                "id": "f22d0026-5474-4502-89fb-c3ce8f206faa"
+            },
+            "content": [
+                {
+                    "type": "text",
+                    "text": "5. Vérifier les corrections et les approuver, même s’il reste des améliorations possibles"
+                }
+            ]
+        },
+        {
+            "type": "paragraph",
+            "attrs": {
+                "textAlign": "start",
+                "paddingTop": 0,
+                "paddingBottom": 0,
+                "textIndente": 0,
+                "lineHeight": 1.15,
+                "paddingLeft": 0,
+                "paddingRight": 0,
+                "id": "f22d0026-5474-4502-89fb-c3ce8f206faa"
+            }
+        },
+        {
+            "type": "paragraph",
+            "attrs": {
+                "textAlign": "start",
+                "paddingTop": 0,
+                "paddingBottom": 0,
+                "textIndente": 0,
+                "lineHeight": 1.15,
+                "paddingLeft": 0,
+                "paddingRight": 0,
+                "id": "f22d0026-5474-4502-89fb-c3ce8f206faa"
+            }
+        },
+        {
+            "type": "paragraph",
+            "attrs": {
+                "textAlign": "start",
+                "paddingTop": 0,
+                "paddingBottom": 0,
+                "textIndente": 0,
+                "lineHeight": 1.15,
+                "paddingLeft": 0,
+                "paddingRight": 0,
+                "id": "f22d0026-5474-4502-89fb-c3ce8f206faa"
+            },
+            "content": [
+                {
+                    "type": "text",
+                    "marks": [
+                        {
+                            "type": "strong",
+                            "attrs": {
+                                "fontWeight": 800
+                            }
+                        },
+                        {
+                            "type": "fontSize",
+                            "attrs": {
+                                "fontSize": "20"
+                            }
+                        },
+                        {
+                            "type": "fontColor",
+                            "attrs": {
+                                "fontColor": "#000000"
+                            }
+                        },
+                        {
+                            "type": "fontFamily",
+                            "attrs": {
+                                "fontFamily": "Arial, Helvetica, sans-serif"
+                            }
+                        }
+                    ],
+                    "text": "INTRODUCTION"
+                },
+                {
+                    "type": "hard_break"
+                }
+            ]
+        },
+        {
+            "type": "paragraph",
+            "attrs": {
+                "textAlign": "start",
+                "paddingTop": 0,
+                "paddingBottom": 0,
+                "textIndente": 0,
+                "lineHeight": "1.38",
+                "paddingLeft": 0,
+                "paddingRight": 0,
+                "id": "1846aaab-a354-42bc-a9c3-28be58f37849"
+            },
+            "content": [
+                {
+                    "type": "text",
+                    "marks": [
+                        {
+                            "type": "fontSize",
+                            "attrs": {
+                                "fontSize": "11pt"
+                            }
+                        },
+                        {
+                            "type": "fontColor",
+                            "attrs": {
+                                "fontColor": "#000000"
+                            }
+                        },
+                        {
+                            "type": "backgroundColor",
+                            "attrs": {
+                                "backgroundColor": "transparent"
+                            }
+                        },
+                        {
+                            "type": "fontFamily",
+                            "attrs": {
+                                "fontFamily": "Arial, sans-serif"
+                            }
+                        }
+                    ],
+                    "text": "L’objet du droit des contrats"
+                }
+            ]
+        },
+        {
+            "type": "paragraph",
+            "attrs": {
+                "textAlign": "start",
+                "paddingTop": 0,
+                "paddingBottom": 0,
+                "textIndente": 0,
+                "lineHeight": 1.15,
+                "paddingLeft": 0,
+                "paddingRight": 0,
+                "id": "6fcba0f6-d2d0-414e-82b7-8c379f586ff9"
+            }
+        },
+        {
+            "type": "paragraph",
+            "attrs": {
+                "textAlign": "start",
+                "paddingTop": 0,
+                "paddingBottom": 0,
+                "textIndente": 0,
+                "lineHeight": 1.15,
+                "paddingLeft": 0,
+                "paddingRight": 0,
+                "id": "f22d0026-5474-4502-89fb-c3ce8f206faa"
+            },
+            "content": [
+                {
+                    "type": "text",
+                    "marks": [
+                        {
+                            "type": "fontSize",
+                            "attrs": {
+                                "fontSize": "11pt"
+                            }
+                        },
+                        {
+                            "type": "fontColor",
+                            "attrs": {
+                                "fontColor": "#000000"
+                            }
+                        },
+                        {
+                            "type": "backgroundColor",
+                            "attrs": {
+                                "backgroundColor": "transparent"
+                            }
+                        },
+                        {
+                            "type": "fontFamily",
+                            "attrs": {
+                                "fontFamily": "Arial, sans-serif"
+                            }
+                        }
+                    ],
+                    "text": "s'intéresser à l'objet du droit des contrats quoi et pourquoi ?  a partir de quoi est fait le droit des contrats. "
+                }
+            ]
+        },
+        {
+            "type": "paragraph",
+            "attrs": {
+                "textAlign": "start",
+                "paddingTop": 0,
+                "paddingBottom": 0,
+                "textIndente": 0,
+                "lineHeight": 1.15,
+                "paddingLeft": 0,
+                "paddingRight": 0,
+                "id": "fdd79b78-8e6b-41de-8375-dbd12ffbf78a"
+            },
+            "content": [
+                {
+                    "type": "hard_break"
+                }
+            ]
+        },
+        {
+            "type": "paragraph",
+            "attrs": {
+                "textAlign": "start",
+                "paddingTop": 0,
+                "paddingBottom": 0,
+                "textIndente": 0,
+                "lineHeight": "1.38",
+                "paddingLeft": 0,
+                "paddingRight": 0,
+                "id": "9e977a47-7bb9-4033-b538-30e33e3779e0"
+            },
+            "content": [
+                {
+                    "type": "text",
+                    "marks": [
+                        {
+                            "type": "fontSize",
+                            "attrs": {
+                                "fontSize": "11pt"
+                            }
+                        },
+                        {
+                            "type": "fontColor",
+                            "attrs": {
+                                "fontColor": "#000000"
+                            }
+                        },
+                        {
+                            "type": "backgroundColor",
+                            "attrs": {
+                                "backgroundColor": "transparent"
+                            }
+                        },
+                        {
+                            "type": "fontFamily",
+                            "attrs": {
+                                "fontFamily": "Arial, sans-serif"
+                            }
+                        }
+                    ],
+                    "text": "Section 1 la matière des droits du contrat "
+                }
+            ]
+        },
+        {
+            "type": "paragraph",
+            "attrs": {
+                "textAlign": "start",
+                "paddingTop": 0,
+                "paddingBottom": 0,
+                "textIndente": 0,
+                "lineHeight": 1.15,
+                "paddingLeft": 0,
+                "paddingRight": 0,
+                "id": "e05969a2-f144-434d-88f0-d8c93691dbe2"
+            },
+            "content": [
+                {
+                    "type": "hard_break"
+                }
+            ]
+        },
+        {
+            "type": "paragraph",
+            "attrs": {
+                "textAlign": "start",
+                "paddingTop": 0,
+                "paddingBottom": 0,
+                "textIndente": 0,
+                "lineHeight": "1.38",
+                "paddingLeft": 0,
+                "paddingRight": 0,
+                "id": "f2efddf0-f93a-4a61-9079-e7e3a9cdeaed"
+            },
+            "content": [
+                {
+                    "type": "text",
+                    "marks": [
+                        {
+                            "type": "fontSize",
+                            "attrs": {
+                                "fontSize": "11pt"
+                            }
+                        },
+                        {
+                            "type": "fontColor",
+                            "attrs": {
+                                "fontColor": "#000000"
+                            }
+                        },
+                        {
+                            "type": "backgroundColor",
+                            "attrs": {
+                                "backgroundColor": "transparent"
+                            }
+                        },
+                        {
+                            "type": "fontFamily",
+                            "attrs": {
+                                "fontFamily": "Arial, sans-serif"
+                            }
+                        }
+                    ],
+                    "text": "le droit disciple sociale qui régit les hommes en société, il est fondamentalement pratique. "
+                }
+            ]
+        },
+        {
+            "type": "paragraph",
+            "attrs": {
+                "textAlign": "start",
+                "paddingTop": 0,
+                "paddingBottom": 0,
+                "textIndente": 0,
+                "lineHeight": "1.38",
+                "paddingLeft": 0,
+                "paddingRight": 0,
+                "id": "26c0a60f-fb9a-4e38-a749-c35f4fab8a86"
+            },
+            "content": [
+                {
+                    "type": "text",
+                    "marks": [
+                        {
+                            "type": "fontSize",
+                            "attrs": {
+                                "fontSize": "11pt"
+                            }
+                        },
+                        {
+                            "type": "fontColor",
+                            "attrs": {
+                                "fontColor": "#000000"
+                            }
+                        },
+                        {
+                            "type": "backgroundColor",
+                            "attrs": {
+                                "backgroundColor": "transparent"
+                            }
+                        },
+                        {
+                            "type": "fontFamily",
+                            "attrs": {
+                                "fontFamily": "Arial, sans-serif"
+                            }
+                        }
+                    ],
+                    "text": "Francois gény "
+                }
+            ]
+        },
+        {
+            "type": "bulletList",
+            "attrs": {
+                "paddingLeft": 30,
+                "margin": 0,
+                "id": "dba0d8f3-8b64-4718-b767-c94a964ca1d8"
+            },
+            "content": [
+                {
+                    "type": "listItem",
+                    "attrs": {
+                        "id": "b81be85e-f51f-459e-ad1d-977a8ac61544"
+                    },
+                    "content": [
+                        {
+                            "type": "paragraph",
+                            "attrs": {
+                                "textAlign": "start",
+                                "paddingTop": 0,
+                                "paddingBottom": 0,
+                                "textIndente": 0,
+                                "lineHeight": "1.38",
+                                "paddingLeft": 0,
+                                "paddingRight": 0,
+                                "id": "d0c89973-91ce-4758-aad4-4dbed3f2b366"
+                            },
+                            "content": [
+                                {
+                                    "type": "text",
+                                    "marks": [
+                                        {
+                                            "type": "fontSize",
+                                            "attrs": {
+                                                "fontSize": "11pt"
+                                            }
+                                        },
+                                        {
+                                            "type": "fontColor",
+                                            "attrs": {
+                                                "fontColor": "#000000"
+                                            }
+                                        },
+                                        {
+                                            "type": "backgroundColor",
+                                            "attrs": {
+                                                "backgroundColor": "transparent"
+                                            }
+                                        },
+                                        {
+                                            "type": "fontFamily",
+                                            "attrs": {
+                                                "fontFamily": "Arial, sans-serif"
+                                            }
+                                        }
+                                    ],
+                                    "text": "le doné tout ce qui préexite a une discipline juridique ca exite dans la vraie vie et constitue a une matière première du droit  "
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "listItem",
+                    "attrs": {
+                        "id": "18b59586-af3d-4031-9262-af30bdd0da1e"
+                    },
+                    "content": [
+                        {
+                            "type": "paragraph",
+                            "attrs": {
+                                "textAlign": "start",
+                                "paddingTop": 0,
+                                "paddingBottom": 0,
+                                "textIndente": 0,
+                                "lineHeight": "1.38",
+                                "paddingLeft": 0,
+                                "paddingRight": 0,
+                                "id": "d08ac720-1581-4db2-bc0e-f79bf72b5009"
+                            },
+                            "content": [
+                                {
+                                    "type": "text",
+                                    "marks": [
+                                        {
+                                            "type": "fontSize",
+                                            "attrs": {
+                                                "fontSize": "11pt"
+                                            }
+                                        },
+                                        {
+                                            "type": "fontColor",
+                                            "attrs": {
+                                                "fontColor": "#000000"
+                                            }
+                                        },
+                                        {
+                                            "type": "backgroundColor",
+                                            "attrs": {
+                                                "backgroundColor": "transparent"
+                                            }
+                                        },
+                                        {
+                                            "type": "fontFamily",
+                                            "attrs": {
+                                                "fontFamily": "Arial, sans-serif"
+                                            }
+                                        }
+                                    ],
+                                    "text": "le conduit c’est la regle de droit élaborer voire par les partie en un contrat. "
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "paragraph",
+            "attrs": {
+                "textAlign": "start",
+                "paddingTop": 0,
+                "paddingBottom": 0,
+                "textIndente": 0,
+                "lineHeight": 1.15,
+                "paddingLeft": 0,
+                "paddingRight": 0,
+                "id": "0b1fa7ba-01d9-415d-b67f-c5722bd0faff"
+            },
+            "content": [
+                {
+                    "type": "hard_break"
+                }
+            ]
+        },
+        {
+            "type": "paragraph",
+            "attrs": {
+                "textAlign": "start",
+                "paddingTop": 0,
+                "paddingBottom": 0,
+                "textIndente": 0,
+                "lineHeight": "1.38",
+                "paddingLeft": 0,
+                "paddingRight": 0,
+                "id": "c23b2f01-f11c-46ed-b23f-47c10f086578"
+            },
+            "content": [
+                {
+                    "type": "text",
+                    "marks": [
+                        {
+                            "type": "fontSize",
+                            "attrs": {
+                                "fontSize": "11pt"
+                            }
+                        },
+                        {
+                            "type": "fontColor",
+                            "attrs": {
+                                "fontColor": "#000000"
+                            }
+                        },
+                        {
+                            "type": "backgroundColor",
+                            "attrs": {
+                                "backgroundColor": "transparent"
+                            }
+                        },
+                        {
+                            "type": "fontFamily",
+                            "attrs": {
+                                "fontFamily": "Arial, sans-serif"
+                            }
+                        }
+                    ],
+                    "text": "Sous section 1 Le donné du droit des contrat "
+                }
+            ]
+        },
+        {
+            "type": "paragraph",
+            "attrs": {
+                "textAlign": "start",
+                "paddingTop": 0,
+                "paddingBottom": 0,
+                "textIndente": 0,
+                "lineHeight": 1.15,
+                "paddingLeft": 0,
+                "paddingRight": 0,
+                "id": "54d14d37-9447-4677-8502-ec2b648abfa4"
+            },
+            "content": [
+                {
+                    "type": "hard_break"
+                }
+            ]
+        },
+        {
+            "type": "paragraph",
+            "attrs": {
+                "textAlign": "start",
+                "paddingTop": 0,
+                "paddingBottom": 0,
+                "textIndente": 0,
+                "lineHeight": "1.38",
+                "paddingLeft": 0,
+                "paddingRight": 0,
+                "id": "0a78a4b1-9cb4-4bc4-a97f-f258e76c44a1"
+            },
+            "content": [
+                {
+                    "type": "text",
+                    "marks": [
+                        {
+                            "type": "fontSize",
+                            "attrs": {
+                                "fontSize": "11pt"
+                            }
+                        },
+                        {
+                            "type": "fontColor",
+                            "attrs": {
+                                "fontColor": "#000000"
+                            }
+                        },
+                        {
+                            "type": "backgroundColor",
+                            "attrs": {
+                                "backgroundColor": "transparent"
+                            }
+                        },
+                        {
+                            "type": "fontFamily",
+                            "attrs": {
+                                "fontFamily": "Arial, sans-serif"
+                            }
+                        }
+                    ],
+                    "text": "les élements qui sont au fondement de l’élaboration du droit des contrats "
+                },
+                {
+                    "type": "hard_break",
+                    "marks": [
+                        {
+                            "type": "fontSize",
+                            "attrs": {
+                                "fontSize": "11pt"
+                            }
+                        },
+                        {
+                            "type": "fontColor",
+                            "attrs": {
+                                "fontColor": "#000000"
+                            }
+                        },
+                        {
+                            "type": "backgroundColor",
+                            "attrs": {
+                                "backgroundColor": "transparent"
+                            }
+                        },
+                        {
+                            "type": "fontFamily",
+                            "attrs": {
+                                "fontFamily": "Arial, sans-serif"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "hard_break",
+                    "marks": [
+                        {
+                            "type": "fontSize",
+                            "attrs": {
+                                "fontSize": "11pt"
+                            }
+                        },
+                        {
+                            "type": "fontColor",
+                            "attrs": {
+                                "fontColor": "#000000"
+                            }
+                        },
+                        {
+                            "type": "backgroundColor",
+                            "attrs": {
+                                "backgroundColor": "transparent"
+                            }
+                        },
+                        {
+                            "type": "fontFamily",
+                            "attrs": {
+                                "fontFamily": "Arial, sans-serif"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "text",
+                    "marks": [
+                        {
+                            "type": "fontSize",
+                            "attrs": {
+                                "fontSize": "11pt"
+                            }
+                        },
+                        {
+                            "type": "fontColor",
+                            "attrs": {
+                                "fontColor": "#000000"
+                            }
+                        },
+                        {
+                            "type": "backgroundColor",
+                            "attrs": {
+                                "backgroundColor": "transparent"
+                            }
+                        },
+                        {
+                            "type": "fontFamily",
+                            "attrs": {
+                                "fontFamily": "Arial, sans-serif"
+                            }
+                        }
+                    ],
+                    "text": "§1 approche analytique "
+                }
+            ]
+        },
+        {
+            "type": "paragraph",
+            "attrs": {
+                "textAlign": "start",
+                "paddingTop": 0,
+                "paddingBottom": 0,
+                "textIndente": 0,
+                "lineHeight": 1.15,
+                "paddingLeft": 0,
+                "paddingRight": 0,
+                "id": "7f2e197f-7302-4ce0-a966-53f50a793cef"
+            },
+            "content": [
+                {
+                    "type": "hard_break"
+                }
+            ]
+        },
+        {
+            "type": "paragraph",
+            "attrs": {
+                "textAlign": "start",
+                "paddingTop": 0,
+                "paddingBottom": 0,
+                "textIndente": 0,
+                "lineHeight": "1.38",
+                "paddingLeft": 0,
+                "paddingRight": 0,
+                "id": "adecf007-c885-415c-bd54-da3e48a044d8"
+            },
+            "content": [
+                {
+                    "type": "text",
+                    "marks": [
+                        {
+                            "type": "fontSize",
+                            "attrs": {
+                                "fontSize": "11pt"
+                            }
+                        },
+                        {
+                            "type": "fontColor",
+                            "attrs": {
+                                "fontColor": "#000000"
+                            }
+                        },
+                        {
+                            "type": "backgroundColor",
+                            "attrs": {
+                                "backgroundColor": "transparent"
+                            }
+                        },
+                        {
+                            "type": "fontFamily",
+                            "attrs": {
+                                "fontFamily": "Arial, sans-serif"
+                            }
+                        }
+                    ],
+                    "text": "les donnée qui suscite la création de contrat 2 ordre "
+                }
+            ]
+        },
+        {
+            "type": "paragraph",
+            "attrs": {
+                "textAlign": "start",
+                "paddingTop": 0,
+                "paddingBottom": 0,
+                "textIndente": 0,
+                "lineHeight": "1.38",
+                "paddingLeft": 0,
+                "paddingRight": 0,
+                "id": "811fdd78-ae65-4ae5-987e-ea07576259fa"
+            },
+            "content": [
+                {
+                    "type": "text",
+                    "marks": [
+                        {
+                            "type": "fontSize",
+                            "attrs": {
+                                "fontSize": "11pt"
+                            }
+                        },
+                        {
+                            "type": "fontColor",
+                            "attrs": {
+                                "fontColor": "#000000"
+                            }
+                        },
+                        {
+                            "type": "backgroundColor",
+                            "attrs": {
+                                "backgroundColor": "transparent"
+                            }
+                        },
+                        {
+                            "type": "fontFamily",
+                            "attrs": {
+                                "fontFamily": "Arial, sans-serif"
+                            }
+                        }
+                    ],
+                    "text": "interet et besoin économique "
+                }
+            ]
+        },
+        {
+            "type": "paragraph",
+            "attrs": {
+                "textAlign": "start",
+                "paddingTop": 0,
+                "paddingBottom": 0,
+                "textIndente": 0,
+                "lineHeight": "1.38",
+                "paddingLeft": 0,
+                "paddingRight": 0,
+                "id": "5c73cc5b-9d72-4017-a8bf-c38fc21d4fd0"
+            },
+            "content": [
+                {
+                    "type": "text",
+                    "marks": [
+                        {
+                            "type": "fontSize",
+                            "attrs": {
+                                "fontSize": "11pt"
+                            }
+                        },
+                        {
+                            "type": "fontColor",
+                            "attrs": {
+                                "fontColor": "#000000"
+                            }
+                        },
+                        {
+                            "type": "backgroundColor",
+                            "attrs": {
+                                "backgroundColor": "transparent"
+                            }
+                        },
+                        {
+                            "type": "fontFamily",
+                            "attrs": {
+                                "fontFamily": "Arial, sans-serif"
+                            }
+                        }
+                    ],
+                    "text": "aspiration morale philopkhique politique "
+                },
+                {
+                    "type": "hard_break",
+                    "marks": [
+                        {
+                            "type": "fontSize",
+                            "attrs": {
+                                "fontSize": "11pt"
+                            }
+                        },
+                        {
+                            "type": "fontColor",
+                            "attrs": {
+                                "fontColor": "#000000"
+                            }
+                        },
+                        {
+                            "type": "backgroundColor",
+                            "attrs": {
+                                "backgroundColor": "transparent"
+                            }
+                        },
+                        {
+                            "type": "fontFamily",
+                            "attrs": {
+                                "fontFamily": "Arial, sans-serif"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "hard_break",
+                    "marks": [
+                        {
+                            "type": "fontSize",
+                            "attrs": {
+                                "fontSize": "11pt"
+                            }
+                        },
+                        {
+                            "type": "fontColor",
+                            "attrs": {
+                                "fontColor": "#000000"
+                            }
+                        },
+                        {
+                            "type": "backgroundColor",
+                            "attrs": {
+                                "backgroundColor": "transparent"
+                            }
+                        },
+                        {
+                            "type": "fontFamily",
+                            "attrs": {
+                                "fontFamily": "Arial, sans-serif"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "text",
+                    "marks": [
+                        {
+                            "type": "fontSize",
+                            "attrs": {
+                                "fontSize": "11pt"
+                            }
+                        },
+                        {
+                            "type": "fontColor",
+                            "attrs": {
+                                "fontColor": "#000000"
+                            }
+                        },
+                        {
+                            "type": "backgroundColor",
+                            "attrs": {
+                                "backgroundColor": "transparent"
+                            }
+                        },
+                        {
+                            "type": "fontFamily",
+                            "attrs": {
+                                "fontFamily": "Arial, sans-serif"
+                            }
+                        }
+                    ],
+                    "text": "1 les données sociaux économiques "
+                }
+            ]
+        },
+        {
+            "type": "paragraph",
+            "attrs": {
+                "textAlign": "start",
+                "paddingTop": 0,
+                "paddingBottom": 0,
+                "textIndente": 0,
+                "lineHeight": 1.15,
+                "paddingLeft": 0,
+                "paddingRight": 0,
+                "id": "40504fe7-04a8-47f8-8c32-598d3c424f89"
+            },
+            "content": [
+                {
+                    "type": "hard_break"
+                }
+            ]
+        },
+        {
+            "type": "paragraph",
+            "attrs": {
+                "textAlign": "start",
+                "paddingTop": 0,
+                "paddingBottom": 0,
+                "textIndente": 0,
+                "lineHeight": "1.38",
+                "paddingLeft": 0,
+                "paddingRight": 0,
+                "id": "deb977f2-3fd0-413b-a4d5-fd59c187fba9"
+            },
+            "content": [
+                {
+                    "type": "text",
+                    "marks": [
+                        {
+                            "type": "fontSize",
+                            "attrs": {
+                                "fontSize": "11pt"
+                            }
+                        },
+                        {
+                            "type": "fontColor",
+                            "attrs": {
+                                "fontColor": "#000000"
+                            }
+                        },
+                        {
+                            "type": "backgroundColor",
+                            "attrs": {
+                                "backgroundColor": "transparent"
+                            }
+                        },
+                        {
+                            "type": "fontFamily",
+                            "attrs": {
+                                "fontFamily": "Arial, sans-serif"
+                            }
+                        }
+                    ],
+                    "text": "les etre humain ont des besoins et des désirs "
+                },
+                {
+                    "type": "hard_break",
+                    "marks": [
+                        {
+                            "type": "fontSize",
+                            "attrs": {
+                                "fontSize": "11pt"
+                            }
+                        },
+                        {
+                            "type": "fontColor",
+                            "attrs": {
+                                "fontColor": "#000000"
+                            }
+                        },
+                        {
+                            "type": "backgroundColor",
+                            "attrs": {
+                                "backgroundColor": "transparent"
+                            }
+                        },
+                        {
+                            "type": "fontFamily",
+                            "attrs": {
+                                "fontFamily": "Arial, sans-serif"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "text",
+                    "marks": [
+                        {
+                            "type": "fontSize",
+                            "attrs": {
+                                "fontSize": "11pt"
+                            }
+                        },
+                        {
+                            "type": "fontColor",
+                            "attrs": {
+                                "fontColor": "#000000"
+                            }
+                        },
+                        {
+                            "type": "backgroundColor",
+                            "attrs": {
+                                "backgroundColor": "transparent"
+                            }
+                        },
+                        {
+                            "type": "fontFamily",
+                            "attrs": {
+                                "fontFamily": "Arial, sans-serif"
+                            }
+                        }
+                    ],
+                    "text": "ces besoin et désir l’Homme ne peut pas tous satisfaire par lui meme. "
+                },
+                {
+                    "type": "hard_break",
+                    "marks": [
+                        {
+                            "type": "fontSize",
+                            "attrs": {
+                                "fontSize": "11pt"
+                            }
+                        },
+                        {
+                            "type": "fontColor",
+                            "attrs": {
+                                "fontColor": "#000000"
+                            }
+                        },
+                        {
+                            "type": "backgroundColor",
+                            "attrs": {
+                                "backgroundColor": "transparent"
+                            }
+                        },
+                        {
+                            "type": "fontFamily",
+                            "attrs": {
+                                "fontFamily": "Arial, sans-serif"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "text",
+                    "marks": [
+                        {
+                            "type": "fontSize",
+                            "attrs": {
+                                "fontSize": "11pt"
+                            }
+                        },
+                        {
+                            "type": "fontColor",
+                            "attrs": {
+                                "fontColor": "#000000"
+                            }
+                        },
+                        {
+                            "type": "backgroundColor",
+                            "attrs": {
+                                "backgroundColor": "transparent"
+                            }
+                        },
+                        {
+                            "type": "fontFamily",
+                            "attrs": {
+                                "fontFamily": "Arial, sans-serif"
+                            }
+                        }
+                    ],
+                    "text": "alors il est nécessaire que des échanges économiques le contrat est l’outil économique par excellence. et le plus civilisé de faire des échagnes économiques."
+                },
+                {
+                    "type": "hard_break",
+                    "marks": [
+                        {
+                            "type": "fontSize",
+                            "attrs": {
+                                "fontSize": "11pt"
+                            }
+                        },
+                        {
+                            "type": "fontColor",
+                            "attrs": {
+                                "fontColor": "#000000"
+                            }
+                        },
+                        {
+                            "type": "backgroundColor",
+                            "attrs": {
+                                "backgroundColor": "transparent"
+                            }
+                        },
+                        {
+                            "type": "fontFamily",
+                            "attrs": {
+                                "fontFamily": "Arial, sans-serif"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "hard_break",
+                    "marks": [
+                        {
+                            "type": "fontSize",
+                            "attrs": {
+                                "fontSize": "11pt"
+                            }
+                        },
+                        {
+                            "type": "fontColor",
+                            "attrs": {
+                                "fontColor": "#000000"
+                            }
+                        },
+                        {
+                            "type": "backgroundColor",
+                            "attrs": {
+                                "backgroundColor": "transparent"
+                            }
+                        },
+                        {
+                            "type": "fontFamily",
+                            "attrs": {
+                                "fontFamily": "Arial, sans-serif"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "text",
+                    "marks": [
+                        {
+                            "type": "fontSize",
+                            "attrs": {
+                                "fontSize": "11pt"
+                            }
+                        },
+                        {
+                            "type": "fontColor",
+                            "attrs": {
+                                "fontColor": "#000000"
+                            }
+                        },
+                        {
+                            "type": "backgroundColor",
+                            "attrs": {
+                                "backgroundColor": "transparent"
+                            }
+                        },
+                        {
+                            "type": "fontFamily",
+                            "attrs": {
+                                "fontFamily": "Arial, sans-serif"
+                            }
+                        }
+                    ],
+                    "text": "la société est un tissu de contrats "
+                }
+            ]
+        },
+        {
+            "type": "paragraph",
+            "attrs": {
+                "textAlign": "start",
+                "paddingTop": 0,
+                "paddingBottom": 0,
+                "textIndente": 0,
+                "lineHeight": 1.15,
+                "paddingLeft": 0,
+                "paddingRight": 0,
+                "id": "7234e3eb-0b59-4637-ae80-2a0e77a5860b"
+            },
+            "content": [
+                {
+                    "type": "hard_break"
+                }
+            ]
+        },
+        {
+            "type": "paragraph",
+            "attrs": {
+                "textAlign": "start",
+                "paddingTop": 0,
+                "paddingBottom": 0,
+                "textIndente": 0,
+                "lineHeight": "1.38",
+                "paddingLeft": 0,
+                "paddingRight": 0,
+                "id": "f80f9e83-7df5-46b7-9f7d-13c88613d304"
+            },
+            "content": [
+                {
+                    "type": "text",
+                    "marks": [
+                        {
+                            "type": "fontSize",
+                            "attrs": {
+                                "fontSize": "11pt"
+                            }
+                        },
+                        {
+                            "type": "fontColor",
+                            "attrs": {
+                                "fontColor": "#000000"
+                            }
+                        },
+                        {
+                            "type": "backgroundColor",
+                            "attrs": {
+                                "backgroundColor": "transparent"
+                            }
+                        },
+                        {
+                            "type": "fontFamily",
+                            "attrs": {
+                                "fontFamily": "Arial, sans-serif"
+                            }
+                        }
+                    ],
+                    "text": "Le contrat a une importance pratique et fondamentale "
+                }
+            ]
+        },
+        {
+            "type": "paragraph",
+            "attrs": {
+                "textAlign": "start",
+                "paddingTop": 0,
+                "paddingBottom": 0,
+                "textIndente": 0,
+                "lineHeight": 1.15,
+                "paddingLeft": 0,
+                "paddingRight": 0,
+                "id": "1e3facd7-e22f-4437-9064-5b0e5f560407"
+            },
+            "content": [
+                {
+                    "type": "hard_break"
+                }
+            ]
+        },
+        {
+            "type": "paragraph",
+            "attrs": {
+                "textAlign": "start",
+                "paddingTop": 0,
+                "paddingBottom": 0,
+                "textIndente": 0,
+                "lineHeight": "1.38",
+                "paddingLeft": 0,
+                "paddingRight": 0,
+                "id": "72fc1dae-53d7-49f3-8f2a-1ac11c8ff4d4"
+            },
+            "content": [
+                {
+                    "type": "text",
+                    "marks": [
+                        {
+                            "type": "fontSize",
+                            "attrs": {
+                                "fontSize": "11pt"
+                            }
+                        },
+                        {
+                            "type": "fontColor",
+                            "attrs": {
+                                "fontColor": "#000000"
+                            }
+                        },
+                        {
+                            "type": "backgroundColor",
+                            "attrs": {
+                                "backgroundColor": "transparent"
+                            }
+                        },
+                        {
+                            "type": "fontFamily",
+                            "attrs": {
+                                "fontFamily": "Arial, sans-serif"
+                            }
+                        }
+                    ],
+                    "text": "2° les données morales "
+                }
+            ]
+        },
+        {
+            "type": "paragraph",
+            "attrs": {
+                "textAlign": "start",
+                "paddingTop": 0,
+                "paddingBottom": 0,
+                "textIndente": 0,
+                "lineHeight": 1.15,
+                "paddingLeft": 0,
+                "paddingRight": 0,
+                "id": "69eaa282-d223-4410-9037-edfd39ef9da7"
+            },
+            "content": [
+                {
+                    "type": "hard_break"
+                }
+            ]
+        },
+        {
+            "type": "paragraph",
+            "attrs": {
+                "textAlign": "start",
+                "paddingTop": 0,
+                "paddingBottom": 0,
+                "textIndente": 0,
+                "lineHeight": "1.38",
+                "paddingLeft": 0,
+                "paddingRight": 0,
+                "id": "b6bf655a-6daf-4a22-b132-b0a1fd069357"
+            },
+            "content": [
+                {
+                    "type": "text",
+                    "marks": [
+                        {
+                            "type": "fontSize",
+                            "attrs": {
+                                "fontSize": "11pt"
+                            }
+                        },
+                        {
+                            "type": "fontColor",
+                            "attrs": {
+                                "fontColor": "#000000"
+                            }
+                        },
+                        {
+                            "type": "backgroundColor",
+                            "attrs": {
+                                "backgroundColor": "transparent"
+                            }
+                        },
+                        {
+                            "type": "fontFamily",
+                            "attrs": {
+                                "fontFamily": "Arial, sans-serif"
+                            }
+                        }
+                    ],
+                    "text": "l’Etre humain n’est pas qu’un corps, Lhomme a des aspiration plus hautes ou plus élever. C’est que l’Homme en foie en son prochain la plus part des promesse sont tenues. elle joue aussi un autre role en sources du droits des contrats dans les rapport sociaux des considérations altruistes "
+                }
+            ]
+        },
+        {
+            "type": "paragraph",
+            "attrs": {
+                "textAlign": "start",
+                "paddingTop": 0,
+                "paddingBottom": 0,
+                "textIndente": 0,
+                "lineHeight": 1.15,
+                "paddingLeft": 0,
+                "paddingRight": 0,
+                "id": "cbe798e8-4476-4fee-9cfa-26d2251c9170"
+            },
+            "content": [
+                {
+                    "type": "hard_break"
+                }
+            ]
+        },
+        {
+            "type": "paragraph",
+            "attrs": {
+                "textAlign": "start",
+                "paddingTop": 0,
+                "paddingBottom": 0,
+                "textIndente": 0,
+                "lineHeight": "1.38",
+                "paddingLeft": 0,
+                "paddingRight": 0,
+                "id": "d0d4e305-79d1-422f-b2e9-db647e1cbd25"
+            },
+            "content": [
+                {
+                    "type": "text",
+                    "marks": [
+                        {
+                            "type": "fontSize",
+                            "attrs": {
+                                "fontSize": "11pt"
+                            }
+                        },
+                        {
+                            "type": "fontColor",
+                            "attrs": {
+                                "fontColor": "#000000"
+                            }
+                        },
+                        {
+                            "type": "backgroundColor",
+                            "attrs": {
+                                "backgroundColor": "transparent"
+                            }
+                        },
+                        {
+                            "type": "fontFamily",
+                            "attrs": {
+                                "fontFamily": "Arial, sans-serif"
+                            }
+                        }
+                    ],
+                    "text": "ces doonées morales et politiuqes doivent etre prisent en compte d’un point de vu analytique l’Homme est fait a la foie d’interet qu’il veut satisfaire et d’idéeaux. "
+                }
+            ]
+        },
+        {
+            "type": "paragraph",
+            "attrs": {
+                "textAlign": "start",
+                "paddingTop": 0,
+                "paddingBottom": 0,
+                "textIndente": 0,
+                "lineHeight": 1.15,
+                "paddingLeft": 0,
+                "paddingRight": 0,
+                "id": "9609522e-b21c-44f3-bf81-8391278f527e"
+            },
+            "content": [
+                {
+                    "type": "hard_break"
+                }
+            ]
+        },
+        {
+            "type": "paragraph",
+            "attrs": {
+                "textAlign": "start",
+                "paddingTop": 0,
+                "paddingBottom": 0,
+                "textIndente": 0,
+                "lineHeight": "1.38",
+                "paddingLeft": 0,
+                "paddingRight": 0,
+                "id": "53a5fdf5-5272-4858-acea-eedb41baad8d"
+            },
+            "content": [
+                {
+                    "type": "text",
+                    "marks": [
+                        {
+                            "type": "fontSize",
+                            "attrs": {
+                                "fontSize": "11pt"
+                            }
+                        },
+                        {
+                            "type": "fontColor",
+                            "attrs": {
+                                "fontColor": "#000000"
+                            }
+                        },
+                        {
+                            "type": "backgroundColor",
+                            "attrs": {
+                                "backgroundColor": "transparent"
+                            }
+                        },
+                        {
+                            "type": "fontFamily",
+                            "attrs": {
+                                "fontFamily": "Arial, sans-serif"
+                            }
+                        }
+                    ],
+                    "text": "§2 l’approche synthétique : les données politiques"
+                }
+            ]
+        },
+        {
+            "type": "paragraph",
+            "attrs": {
+                "textAlign": "start",
+                "paddingTop": 0,
+                "paddingBottom": 0,
+                "textIndente": 0,
+                "lineHeight": 1.15,
+                "paddingLeft": 0,
+                "paddingRight": 0,
+                "id": "b2296955-943e-4ce6-9fda-7a130b0e5c80"
+            },
+            "content": [
+                {
+                    "type": "hard_break"
+                }
+            ]
+        },
+        {
+            "type": "paragraph",
+            "attrs": {
+                "textAlign": "start",
+                "paddingTop": 0,
+                "paddingBottom": 0,
+                "textIndente": 0,
+                "lineHeight": "1.38",
+                "paddingLeft": 0,
+                "paddingRight": 0,
+                "id": "82943ab0-7515-441b-8357-cbb952a5b5b5"
+            },
+            "content": [
+                {
+                    "type": "text",
+                    "marks": [
+                        {
+                            "type": "fontSize",
+                            "attrs": {
+                                "fontSize": "11pt"
+                            }
+                        },
+                        {
+                            "type": "fontColor",
+                            "attrs": {
+                                "fontColor": "#000000"
+                            }
+                        },
+                        {
+                            "type": "backgroundColor",
+                            "attrs": {
+                                "backgroundColor": "transparent"
+                            }
+                        },
+                        {
+                            "type": "fontFamily",
+                            "attrs": {
+                                "fontFamily": "Arial, sans-serif"
+                            }
+                        }
+                    ],
+                    "text": "les données sociaux économique et morales ne sont jamais séparées. "
+                }
+            ]
+        },
+        {
+            "type": "paragraph",
+            "attrs": {
+                "textAlign": "start",
+                "paddingTop": 0,
+                "paddingBottom": 0,
+                "textIndente": 0,
+                "lineHeight": 1.15,
+                "paddingLeft": 0,
+                "paddingRight": 0,
+                "id": "8abff237-a885-4c02-ab35-57ea3cd542fc"
+            },
+            "content": [
+                {
+                    "type": "hard_break"
+                }
+            ]
+        },
+        {
+            "type": "paragraph",
+            "attrs": {
+                "textAlign": "start",
+                "paddingTop": 0,
+                "paddingBottom": 0,
+                "textIndente": 0,
+                "lineHeight": "1.38",
+                "paddingLeft": 0,
+                "paddingRight": 0,
+                "id": "89d31f6e-0ddd-4ef2-b1ae-e90fddf3a123"
+            },
+            "content": [
+                {
+                    "type": "text",
+                    "marks": [
+                        {
+                            "type": "fontSize",
+                            "attrs": {
+                                "fontSize": "11pt"
+                            }
+                        },
+                        {
+                            "type": "fontColor",
+                            "attrs": {
+                                "fontColor": "#000000"
+                            }
+                        },
+                        {
+                            "type": "backgroundColor",
+                            "attrs": {
+                                "backgroundColor": "transparent"
+                            }
+                        },
+                        {
+                            "type": "fontFamily",
+                            "attrs": {
+                                "fontFamily": "Arial, sans-serif"
+                            }
+                        }
+                    ],
+                    "text": "c’est le législateur qui résout les conflits entre les interet et les besoin, idéaux et valeurs morales. ils détermeines les limites du droit des contrats, il dépend en parti du type de régime politique moins les doénnes morales auront de poid.   "
+                }
+            ]
+        },
+        {
+            "type": "paragraph",
+            "attrs": {
+                "textAlign": "start",
+                "paddingTop": 0,
+                "paddingBottom": 0,
+                "textIndente": 0,
+                "lineHeight": "1.38",
+                "paddingLeft": 0,
+                "paddingRight": 0,
+                "id": "17a52cc9-cce9-472a-860a-4a716cdc2562"
+            },
+            "content": [
+                {
+                    "type": "text",
+                    "marks": [
+                        {
+                            "type": "fontSize",
+                            "attrs": {
+                                "fontSize": "11pt"
+                            }
+                        },
+                        {
+                            "type": "fontColor",
+                            "attrs": {
+                                "fontColor": "#000000"
+                            }
+                        },
+                        {
+                            "type": "backgroundColor",
+                            "attrs": {
+                                "backgroundColor": "transparent"
+                            }
+                        },
+                        {
+                            "type": "fontFamily",
+                            "attrs": {
+                                "fontFamily": "Arial, sans-serif"
+                            }
+                        }
+                    ],
+                    "text": "L’arbitrage entre les doonées sociaux économique est difficile a traduire. IL y a un partage entre la poursuite de l’interet génrals mais aussi avec leurs propres interets professionnel "
+                }
+            ]
+        },
+        {
+            "type": "paragraph",
+            "attrs": {
+                "textAlign": "start",
+                "paddingTop": 0,
+                "paddingBottom": 0,
+                "textIndente": 0,
+                "lineHeight": 1.15,
+                "paddingLeft": 0,
+                "paddingRight": 0,
+                "id": "28530ca6-4400-46fa-9be4-7386ae1c10f2"
+            },
+            "content": [
+                {
+                    "type": "hard_break"
+                }
+            ]
+        },
+        {
+            "type": "paragraph",
+            "attrs": {
+                "textAlign": "start",
+                "paddingTop": 0,
+                "paddingBottom": 0,
+                "textIndente": 0,
+                "lineHeight": "1.38",
+                "paddingLeft": 0,
+                "paddingRight": 0,
+                "id": "f2c07518-4dbc-4995-8d89-6daa6e659ad5"
+            },
+            "content": [
+                {
+                    "type": "text",
+                    "marks": [
+                        {
+                            "type": "fontSize",
+                            "attrs": {
+                                "fontSize": "11pt"
+                            }
+                        },
+                        {
+                            "type": "fontColor",
+                            "attrs": {
+                                "fontColor": "#000000"
+                            }
+                        },
+                        {
+                            "type": "backgroundColor",
+                            "attrs": {
+                                "backgroundColor": "transparent"
+                            }
+                        },
+                        {
+                            "type": "fontFamily",
+                            "attrs": {
+                                "fontFamily": "Arial, sans-serif"
+                            }
+                        }
+                    ],
+                    "text": "L’édude du droit des contrat a pour vériable matirèe le contrui."
+                },
+                {
+                    "type": "hard_break",
+                    "marks": [
+                        {
+                            "type": "fontSize",
+                            "attrs": {
+                                "fontSize": "11pt"
+                            }
+                        },
+                        {
+                            "type": "fontColor",
+                            "attrs": {
+                                "fontColor": "#000000"
+                            }
+                        },
+                        {
+                            "type": "backgroundColor",
+                            "attrs": {
+                                "backgroundColor": "transparent"
+                            }
+                        },
+                        {
+                            "type": "fontFamily",
+                            "attrs": {
+                                "fontFamily": "Arial, sans-serif"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "hard_break",
+                    "marks": [
+                        {
+                            "type": "fontSize",
+                            "attrs": {
+                                "fontSize": "11pt"
+                            }
+                        },
+                        {
+                            "type": "fontColor",
+                            "attrs": {
+                                "fontColor": "#000000"
+                            }
+                        },
+                        {
+                            "type": "backgroundColor",
+                            "attrs": {
+                                "backgroundColor": "transparent"
+                            }
+                        },
+                        {
+                            "type": "fontFamily",
+                            "attrs": {
+                                "fontFamily": "Arial, sans-serif"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "text",
+                    "marks": [
+                        {
+                            "type": "fontSize",
+                            "attrs": {
+                                "fontSize": "11pt"
+                            }
+                        },
+                        {
+                            "type": "fontColor",
+                            "attrs": {
+                                "fontColor": "#000000"
+                            }
+                        },
+                        {
+                            "type": "backgroundColor",
+                            "attrs": {
+                                "backgroundColor": "transparent"
+                            }
+                        },
+                        {
+                            "type": "fontFamily",
+                            "attrs": {
+                                "fontFamily": "Arial, sans-serif"
+                            }
+                        }
+                    ],
+                    "text": "sous Section 2 le construi les règels du droit des contrats. "
+                }
+            ]
+        },
+        {
+            "type": "paragraph",
+            "attrs": {
+                "textAlign": "start",
+                "paddingTop": 0,
+                "paddingBottom": 0,
+                "textIndente": 0,
+                "lineHeight": "1.38",
+                "paddingLeft": 0,
+                "paddingRight": 0,
+                "id": "cb2f7f14-0639-4206-baf1-cbb7483e0a29"
+            },
+            "content": [
+                {
+                    "type": "hard_break",
+                    "marks": [
+                        {
+                            "type": "fontSize",
+                            "attrs": {
+                                "fontSize": "11pt"
+                            }
+                        },
+                        {
+                            "type": "fontColor",
+                            "attrs": {
+                                "fontColor": "#000000"
+                            }
+                        },
+                        {
+                            "type": "backgroundColor",
+                            "attrs": {
+                                "backgroundColor": "transparent"
+                            }
+                        },
+                        {
+                            "type": "fontFamily",
+                            "attrs": {
+                                "fontFamily": "Arial, sans-serif"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "text",
+                    "marks": [
+                        {
+                            "type": "fontSize",
+                            "attrs": {
+                                "fontSize": "11pt"
+                            }
+                        },
+                        {
+                            "type": "fontColor",
+                            "attrs": {
+                                "fontColor": "#000000"
+                            }
+                        },
+                        {
+                            "type": "backgroundColor",
+                            "attrs": {
+                                "backgroundColor": "transparent"
+                            }
+                        },
+                        {
+                            "type": "fontFamily",
+                            "attrs": {
+                                "fontFamily": "Arial, sans-serif"
+                            }
+                        }
+                    ],
+                    "text": "§1 approche dynamique "
+                }
+            ]
+        },
+        {
+            "type": "paragraph",
+            "attrs": {
+                "textAlign": "start",
+                "paddingTop": 0,
+                "paddingBottom": 0,
+                "textIndente": 0,
+                "lineHeight": 1.15,
+                "paddingLeft": 0,
+                "paddingRight": 0,
+                "id": "608d58ab-95af-4690-ad14-6af610032e74"
+            },
+            "content": [
+                {
+                    "type": "hard_break"
+                }
+            ]
+        },
+        {
+            "type": "paragraph",
+            "attrs": {
+                "textAlign": "start",
+                "paddingTop": 0,
+                "paddingBottom": 0,
+                "textIndente": 0,
+                "lineHeight": "1.38",
+                "paddingLeft": 0,
+                "paddingRight": 0,
+                "id": "5e82b0ad-49b7-4e85-b29d-5620e56a63af"
+            },
+            "content": [
+                {
+                    "type": "text",
+                    "marks": [
+                        {
+                            "type": "fontSize",
+                            "attrs": {
+                                "fontSize": "11pt"
+                            }
+                        },
+                        {
+                            "type": "fontColor",
+                            "attrs": {
+                                "fontColor": "#000000"
+                            }
+                        },
+                        {
+                            "type": "backgroundColor",
+                            "attrs": {
+                                "backgroundColor": "transparent"
+                            }
+                        },
+                        {
+                            "type": "fontFamily",
+                            "attrs": {
+                                "fontFamily": "Arial, sans-serif"
+                            }
+                        }
+                    ],
+                    "text": "1 l’histoire du droit des conrtrats "
+                }
+            ]
+        },
+        {
+            "type": "paragraph",
+            "attrs": {
+                "textAlign": "start",
+                "paddingTop": 0,
+                "paddingBottom": 0,
+                "textIndente": 0,
+                "lineHeight": 1.15,
+                "paddingLeft": 0,
+                "paddingRight": 0,
+                "id": "cfce0485-f756-4aa4-b042-f80de53c3a64"
+            },
+            "content": [
+                {
+                    "type": "hard_break"
+                }
+            ]
+        },
+        {
+            "type": "paragraph",
+            "attrs": {
+                "textAlign": "start",
+                "paddingTop": 0,
+                "paddingBottom": 0,
+                "textIndente": 0,
+                "lineHeight": "1.38",
+                "paddingLeft": 0,
+                "paddingRight": 0,
+                "id": "a818422d-5bbb-495b-9724-d8e200961416"
+            },
+            "content": [
+                {
+                    "type": "text",
+                    "marks": [
+                        {
+                            "type": "fontSize",
+                            "attrs": {
+                                "fontSize": "11pt"
+                            }
+                        },
+                        {
+                            "type": "fontColor",
+                            "attrs": {
+                                "fontColor": "#000000"
+                            }
+                        },
+                        {
+                            "type": "backgroundColor",
+                            "attrs": {
+                                "backgroundColor": "transparent"
+                            }
+                        },
+                        {
+                            "type": "fontFamily",
+                            "attrs": {
+                                "fontFamily": "Arial, sans-serif"
+                            }
+                        }
+                    ],
+                    "text": "aujourd'hui surtout le code civil "
+                },
+                {
+                    "type": "hard_break",
+                    "marks": [
+                        {
+                            "type": "fontSize",
+                            "attrs": {
+                                "fontSize": "11pt"
+                            }
+                        },
+                        {
+                            "type": "fontColor",
+                            "attrs": {
+                                "fontColor": "#000000"
+                            }
+                        },
+                        {
+                            "type": "backgroundColor",
+                            "attrs": {
+                                "backgroundColor": "transparent"
+                            }
+                        },
+                        {
+                            "type": "fontFamily",
+                            "attrs": {
+                                "fontFamily": "Arial, sans-serif"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "hard_break",
+                    "marks": [
+                        {
+                            "type": "fontSize",
+                            "attrs": {
+                                "fontSize": "11pt"
+                            }
+                        },
+                        {
+                            "type": "fontColor",
+                            "attrs": {
+                                "fontColor": "#000000"
+                            }
+                        },
+                        {
+                            "type": "backgroundColor",
+                            "attrs": {
+                                "backgroundColor": "transparent"
+                            }
+                        },
+                        {
+                            "type": "fontFamily",
+                            "attrs": {
+                                "fontFamily": "Arial, sans-serif"
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "paragraph",
+            "attrs": {
+                "textAlign": "start",
+                "paddingTop": 0,
+                "paddingBottom": 0,
+                "textIndente": 0,
+                "lineHeight": "1.38",
+                "paddingLeft": 0,
+                "paddingRight": 0,
+                "id": "79b0fd79-53ef-4e96-ba2e-ee4d8f792f68"
+            },
+            "content": [
+                {
+                    "type": "text",
+                    "marks": [
+                        {
+                            "type": "fontSize",
+                            "attrs": {
+                                "fontSize": "11pt"
+                            }
+                        },
+                        {
+                            "type": "fontColor",
+                            "attrs": {
+                                "fontColor": "#000000"
+                            }
+                        },
+                        {
+                            "type": "backgroundColor",
+                            "attrs": {
+                                "backgroundColor": "transparent"
+                            }
+                        },
+                        {
+                            "type": "fontFamily",
+                            "attrs": {
+                                "fontFamily": "Arial, sans-serif"
+                            }
+                        }
+                    ],
+                    "text": "A° Avant le code civil "
+                }
+            ]
+        },
+        {
+            "type": "paragraph",
+            "attrs": {
+                "textAlign": "start",
+                "paddingTop": 0,
+                "paddingBottom": 0,
+                "textIndente": 0,
+                "lineHeight": 1.15,
+                "paddingLeft": 0,
+                "paddingRight": 0,
+                "id": "404c3563-4358-4807-9ffe-2485d0483da4"
+            },
+            "content": [
+                {
+                    "type": "hard_break"
+                }
+            ]
+        },
+        {
+            "type": "paragraph",
+            "attrs": {
+                "textAlign": "start",
+                "paddingTop": 0,
+                "paddingBottom": 0,
+                "textIndente": 0,
+                "lineHeight": "1.38",
+                "paddingLeft": 0,
+                "paddingRight": 0,
+                "id": "f60a4ae4-6086-49a1-920e-6f79d895f637"
+            },
+            "content": [
+                {
+                    "type": "text",
+                    "marks": [
+                        {
+                            "type": "fontSize",
+                            "attrs": {
+                                "fontSize": "11pt"
+                            }
+                        },
+                        {
+                            "type": "fontColor",
+                            "attrs": {
+                                "fontColor": "#000000"
+                            }
+                        },
+                        {
+                            "type": "backgroundColor",
+                            "attrs": {
+                                "backgroundColor": "transparent"
+                            }
+                        },
+                        {
+                            "type": "fontFamily",
+                            "attrs": {
+                                "fontFamily": "Arial, sans-serif"
+                            }
+                        }
+                    ],
+                    "text": "1° le droit romain "
+                }
+            ]
+        },
+        {
+            "type": "paragraph",
+            "attrs": {
+                "textAlign": "start",
+                "paddingTop": 0,
+                "paddingBottom": 0,
+                "textIndente": 0,
+                "lineHeight": 1.15,
+                "paddingLeft": 0,
+                "paddingRight": 0,
+                "id": "468a70ac-8700-43a0-b017-312d9b083288"
+            },
+            "content": [
+                {
+                    "type": "hard_break"
+                }
+            ]
+        },
+        {
+            "type": "paragraph",
+            "attrs": {
+                "textAlign": "start",
+                "paddingTop": 0,
+                "paddingBottom": 0,
+                "textIndente": 0,
+                "lineHeight": "1.38",
+                "paddingLeft": 0,
+                "paddingRight": 0,
+                "id": "f619b0ea-f89a-413f-8a16-28271f6e9b05"
+            },
+            "content": [
+                {
+                    "type": "text",
+                    "marks": [
+                        {
+                            "type": "fontSize",
+                            "attrs": {
+                                "fontSize": "11pt"
+                            }
+                        },
+                        {
+                            "type": "fontColor",
+                            "attrs": {
+                                "fontColor": "#000000"
+                            }
+                        },
+                        {
+                            "type": "backgroundColor",
+                            "attrs": {
+                                "backgroundColor": "transparent"
+                            }
+                        },
+                        {
+                            "type": "fontFamily",
+                            "attrs": {
+                                "fontFamily": "Arial, sans-serif"
+                            }
+                        }
+                    ],
+                    "text": "le droit romain continent plusieur caractéristique il n’existe pas de droit commun romain. Pas de droit des contrats suels les conrats reconnu par la loi pouvais avoir un recours en justice, contrat limitatimevent prévu par la loi. "
+                },
+                {
+                    "type": "hard_break",
+                    "marks": [
+                        {
+                            "type": "fontSize",
+                            "attrs": {
+                                "fontSize": "11pt"
+                            }
+                        },
+                        {
+                            "type": "fontColor",
+                            "attrs": {
+                                "fontColor": "#000000"
+                            }
+                        },
+                        {
+                            "type": "backgroundColor",
+                            "attrs": {
+                                "backgroundColor": "transparent"
+                            }
+                        },
+                        {
+                            "type": "fontFamily",
+                            "attrs": {
+                                "fontFamily": "Arial, sans-serif"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "hard_break",
+                    "marks": [
+                        {
+                            "type": "fontSize",
+                            "attrs": {
+                                "fontSize": "11pt"
+                            }
+                        },
+                        {
+                            "type": "fontColor",
+                            "attrs": {
+                                "fontColor": "#000000"
+                            }
+                        },
+                        {
+                            "type": "backgroundColor",
+                            "attrs": {
+                                "backgroundColor": "transparent"
+                            }
+                        },
+                        {
+                            "type": "fontFamily",
+                            "attrs": {
+                                "fontFamily": "Arial, sans-serif"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "text",
+                    "marks": [
+                        {
+                            "type": "fontSize",
+                            "attrs": {
+                                "fontSize": "11pt"
+                            }
+                        },
+                        {
+                            "type": "fontColor",
+                            "attrs": {
+                                "fontColor": "#000000"
+                            }
+                        },
+                        {
+                            "type": "backgroundColor",
+                            "attrs": {
+                                "backgroundColor": "transparent"
+                            }
+                        },
+                        {
+                            "type": "fontFamily",
+                            "attrs": {
+                                "fontFamily": "Arial, sans-serif"
+                            }
+                        }
+                    ],
+                    "text": "Le droit cromain des contrat était un droit formaliste, c'est-à-dire pour que unacte soit un contrat valable devais passer par le respect de certaine formalitée. "
+                }
+            ]
+        },
+        {
+            "type": "paragraph",
+            "attrs": {
+                "textAlign": "start",
+                "paddingTop": 0,
+                "paddingBottom": 0,
+                "textIndente": 0,
+                "lineHeight": 1.15,
+                "paddingLeft": 0,
+                "paddingRight": 0,
+                "id": "30d6d370-19a2-4197-93f0-9e10c91b8127"
+            },
+            "content": [
+                {
+                    "type": "hard_break"
+                }
+            ]
+        },
+        {
+            "type": "paragraph",
+            "attrs": {
+                "textAlign": "start",
+                "paddingTop": 0,
+                "paddingBottom": 0,
+                "textIndente": 0,
+                "lineHeight": "1.38",
+                "paddingLeft": 0,
+                "paddingRight": 0,
+                "id": "e9aad346-3085-4c05-a6de-fb9570fb7a6b"
+            },
+            "content": [
+                {
+                    "type": "text",
+                    "marks": [
+                        {
+                            "type": "fontSize",
+                            "attrs": {
+                                "fontSize": "11pt"
+                            }
+                        },
+                        {
+                            "type": "fontColor",
+                            "attrs": {
+                                "fontColor": "#000000"
+                            }
+                        },
+                        {
+                            "type": "backgroundColor",
+                            "attrs": {
+                                "backgroundColor": "transparent"
+                            }
+                        },
+                        {
+                            "type": "fontFamily",
+                            "attrs": {
+                                "fontFamily": "Arial, sans-serif"
+                            }
+                        }
+                    ],
+                    "text": "le droit des contrat va s’assouplir, reconnaissance de plus en plus de contrat les contrats sont conclut sans respecter les formalités "
+                },
+                {
+                    "type": "hard_break",
+                    "marks": [
+                        {
+                            "type": "fontSize",
+                            "attrs": {
+                                "fontSize": "11pt"
+                            }
+                        },
+                        {
+                            "type": "fontColor",
+                            "attrs": {
+                                "fontColor": "#000000"
+                            }
+                        },
+                        {
+                            "type": "backgroundColor",
+                            "attrs": {
+                                "backgroundColor": "transparent"
+                            }
+                        },
+                        {
+                            "type": "fontFamily",
+                            "attrs": {
+                                "fontFamily": "Arial, sans-serif"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "text",
+                    "marks": [
+                        {
+                            "type": "fontSize",
+                            "attrs": {
+                                "fontSize": "11pt"
+                            }
+                        },
+                        {
+                            "type": "fontColor",
+                            "attrs": {
+                                "fontColor": "#000000"
+                            }
+                        },
+                        {
+                            "type": "backgroundColor",
+                            "attrs": {
+                                "backgroundColor": "transparent"
+                            }
+                        },
+                        {
+                            "type": "fontFamily",
+                            "attrs": {
+                                "fontFamily": "Arial, sans-serif"
+                            }
+                        }
+                    ],
+                    "text": "3types de contrats : "
+                }
+            ]
+        },
+        {
+            "type": "orderedList",
+            "attrs": {
+                "order": 1,
+                "paddingLeft": 0,
+                "id": "fa94d79f-b391-4ec3-bb70-e4e5c2a860fa"
+            },
+            "content": [
+                {
+                    "type": "listItem",
+                    "attrs": {
+                        "id": "d9c8fd26-5d45-4fc1-b959-566217e90f64"
+                    },
+                    "content": [
+                        {
+                            "type": "paragraph",
+                            "attrs": {
+                                "textAlign": "start",
+                                "paddingTop": 0,
+                                "paddingBottom": 0,
+                                "textIndente": 0,
+                                "lineHeight": "1.38",
+                                "paddingLeft": 0,
+                                "paddingRight": 0,
+                                "id": "7507a18d-e936-4d07-ad16-bf2e55321206"
+                            },
+                            "content": [
+                                {
+                                    "type": "text",
+                                    "marks": [
+                                        {
+                                            "type": "em"
+                                        },
+                                        {
+                                            "type": "fontSize",
+                                            "attrs": {
+                                                "fontSize": "11pt"
+                                            }
+                                        },
+                                        {
+                                            "type": "fontColor",
+                                            "attrs": {
+                                                "fontColor": "#000000"
+                                            }
+                                        },
+                                        {
+                                            "type": "backgroundColor",
+                                            "attrs": {
+                                                "backgroundColor": "transparent"
+                                            }
+                                        },
+                                        {
+                                            "type": "fontFamily",
+                                            "attrs": {
+                                                "fontFamily": "Arial, sans-serif"
+                                            }
+                                        }
+                                    ],
+                                    "text": "Acta verbis "
+                                },
+                                {
+                                    "type": "text",
+                                    "marks": [
+                                        {
+                                            "type": "fontSize",
+                                            "attrs": {
+                                                "fontSize": "11pt"
+                                            }
+                                        },
+                                        {
+                                            "type": "fontColor",
+                                            "attrs": {
+                                                "fontColor": "#000000"
+                                            }
+                                        },
+                                        {
+                                            "type": "backgroundColor",
+                                            "attrs": {
+                                                "backgroundColor": "transparent"
+                                            }
+                                        },
+                                        {
+                                            "type": "fontFamily",
+                                            "attrs": {
+                                                "fontFamily": "Arial, sans-serif"
+                                            }
+                                        }
+                                    ],
+                                    "text": "=> dépent de la prononciation des paroles "
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "listItem",
+                    "attrs": {
+                        "id": "aa00e838-ebf1-46fb-ae43-9c15bd8ac634"
+                    },
+                    "content": [
+                        {
+                            "type": "paragraph",
+                            "attrs": {
+                                "textAlign": "start",
+                                "paddingTop": 0,
+                                "paddingBottom": 0,
+                                "textIndente": 0,
+                                "lineHeight": "1.38",
+                                "paddingLeft": 0,
+                                "paddingRight": 0,
+                                "id": "d234686d-ffd8-49dc-8bfb-0d3d89e481db"
+                            },
+                            "content": [
+                                {
+                                    "type": "text",
+                                    "marks": [
+                                        {
+                                            "type": "em"
+                                        },
+                                        {
+                                            "type": "fontSize",
+                                            "attrs": {
+                                                "fontSize": "11pt"
+                                            }
+                                        },
+                                        {
+                                            "type": "fontColor",
+                                            "attrs": {
+                                                "fontColor": "#000000"
+                                            }
+                                        },
+                                        {
+                                            "type": "backgroundColor",
+                                            "attrs": {
+                                                "backgroundColor": "transparent"
+                                            }
+                                        },
+                                        {
+                                            "type": "fontFamily",
+                                            "attrs": {
+                                                "fontFamily": "Arial, sans-serif"
+                                            }
+                                        }
+                                    ],
+                                    "text": "Acta literis => "
+                                },
+                                {
+                                    "type": "text",
+                                    "marks": [
+                                        {
+                                            "type": "fontSize",
+                                            "attrs": {
+                                                "fontSize": "11pt"
+                                            }
+                                        },
+                                        {
+                                            "type": "fontColor",
+                                            "attrs": {
+                                                "fontColor": "#000000"
+                                            }
+                                        },
+                                        {
+                                            "type": "backgroundColor",
+                                            "attrs": {
+                                                "backgroundColor": "transparent"
+                                            }
+                                        },
+                                        {
+                                            "type": "fontFamily",
+                                            "attrs": {
+                                                "fontFamily": "Arial, sans-serif"
+                                            }
+                                        }
+                                    ],
+                                    "text": "contrat qui nécessite la rédaction d’une mention "
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "listItem",
+                    "attrs": {
+                        "id": "01e48163-51f0-44aa-87fd-4ae15558d810"
+                    },
+                    "content": [
+                        {
+                            "type": "paragraph",
+                            "attrs": {
+                                "textAlign": "start",
+                                "paddingTop": 0,
+                                "paddingBottom": 0,
+                                "textIndente": 0,
+                                "lineHeight": "1.38",
+                                "paddingLeft": 0,
+                                "paddingRight": 0,
+                                "id": "7331059b-8888-4b66-b165-51d0ea5cd585"
+                            },
+                            "content": [
+                                {
+                                    "type": "text",
+                                    "marks": [
+                                        {
+                                            "type": "em"
+                                        },
+                                        {
+                                            "type": "fontSize",
+                                            "attrs": {
+                                                "fontSize": "11pt"
+                                            }
+                                        },
+                                        {
+                                            "type": "fontColor",
+                                            "attrs": {
+                                                "fontColor": "#000000"
+                                            }
+                                        },
+                                        {
+                                            "type": "backgroundColor",
+                                            "attrs": {
+                                                "backgroundColor": "transparent"
+                                            }
+                                        },
+                                        {
+                                            "type": "fontFamily",
+                                            "attrs": {
+                                                "fontFamily": "Arial, sans-serif"
+                                            }
+                                        }
+                                    ],
+                                    "text": "Acta re "
+                                },
+                                {
+                                    "type": "text",
+                                    "marks": [
+                                        {
+                                            "type": "fontSize",
+                                            "attrs": {
+                                                "fontSize": "11pt"
+                                            }
+                                        },
+                                        {
+                                            "type": "fontColor",
+                                            "attrs": {
+                                                "fontColor": "#000000"
+                                            }
+                                        },
+                                        {
+                                            "type": "backgroundColor",
+                                            "attrs": {
+                                                "backgroundColor": "transparent"
+                                            }
+                                        },
+                                        {
+                                            "type": "fontFamily",
+                                            "attrs": {
+                                                "fontFamily": "Arial, sans-serif"
+                                            }
+                                        }
+                                    ],
+                                    "text": " => contrat que valable que si la chose était remise "
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "paragraph",
+            "attrs": {
+                "textAlign": "start",
+                "paddingTop": 0,
+                "paddingBottom": 0,
+                "textIndente": 0,
+                "lineHeight": 1.15,
+                "paddingLeft": 0,
+                "paddingRight": 0,
+                "id": "84cc36a5-2fb6-4b9f-b3ce-31b80ec30efa"
+            },
+            "content": [
+                {
+                    "type": "hard_break"
+                }
+            ]
+        },
+        {
+            "type": "paragraph",
+            "attrs": {
+                "textAlign": "start",
+                "paddingTop": 0,
+                "paddingBottom": 0,
+                "textIndente": 0,
+                "lineHeight": "1.38",
+                "paddingLeft": 0,
+                "paddingRight": 0,
+                "id": "34f40a43-97a7-4288-a7ed-e81baa8858de"
+            },
+            "content": [
+                {
+                    "type": "text",
+                    "marks": [
+                        {
+                            "type": "fontSize",
+                            "attrs": {
+                                "fontSize": "11pt"
+                            }
+                        },
+                        {
+                            "type": "fontColor",
+                            "attrs": {
+                                "fontColor": "#000000"
+                            }
+                        },
+                        {
+                            "type": "backgroundColor",
+                            "attrs": {
+                                "backgroundColor": "transparent"
+                            }
+                        },
+                        {
+                            "type": "fontFamily",
+                            "attrs": {
+                                "fontFamily": "Arial, sans-serif"
+                            }
+                        }
+                    ],
+                    "text": "le droit romain a fourni au droit francais un nombre important des concepts et des technique juridique qu’on tulise mais pas l’esprit "
+                }
+            ]
+        },
+        {
+            "type": "paragraph",
+            "attrs": {
+                "textAlign": "start",
+                "paddingTop": 0,
+                "paddingBottom": 0,
+                "textIndente": 0,
+                "lineHeight": 1.15,
+                "paddingLeft": 0,
+                "paddingRight": 0,
+                "id": "47537c32-1501-49e1-a8ca-e09774e98ea1"
+            },
+            "content": [
+                {
+                    "type": "hard_break"
+                }
+            ]
+        },
+        {
+            "type": "paragraph",
+            "attrs": {
+                "textAlign": "start",
+                "paddingTop": 0,
+                "paddingBottom": 0,
+                "textIndente": 0,
+                "lineHeight": 1.15,
+                "paddingLeft": 0,
+                "paddingRight": 0,
+                "id": "81fad024-d71c-4bf1-b284-91facbb95c57"
+            }
+        }
+    ]
+}

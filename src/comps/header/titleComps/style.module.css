@@ -1,0 +1,12 @@
+.input:focus {
+  border-bottom-color: var(--corporateBlue);
+  outline: none;
+}
+
+.input {
+  border: 2px solid transparent;
+  border-radius: 2.5px;
+  width: fit-content;
+  background-color: var(--gris1);
+  font-size: 14pt;
+}
