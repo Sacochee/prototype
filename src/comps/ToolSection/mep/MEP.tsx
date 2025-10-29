@@ -9,7 +9,7 @@ import { setLockWhenLoading } from '@/comps/editeur/plugins/temporary/LockWhenLo
 import chunkBorderClass from '../utils/chunkBorderClass'
 import cleanTemporaryNode from '../utils/CleanTempory'
 import { useMEP } from './Context'
-import { TextSelection } from 'prosemirror-state'
+import { EditorState, TextSelection } from 'prosemirror-state'
 
 import Tow from './comps/Tow'
 import { Chunk, sliceToChunk } from '../utils/ChunkBuilder'
@@ -19,8 +19,18 @@ import decompressHtmlStyle from './utils/unCompressHhtmlStyle'
 import GetSelectionComps from '../comps/step/GetSelectionComps'
 import RequestGestionComps from '../comps/step/RequestGestionComps'
 import { cleanIds } from '../utils/cleanIds'
+import ApplyDefs from './utils/ApplyRules/ApplyDefs'
+import ApplyEnonce from './utils/ApplyRules/ApplyEnonce'
+import ApplyExemple from './utils/ApplyRules/ApplyExemple'
+import ApplyQuestion from './utils/ApplyRules/ApplyQuestion'
+import ApplyAuteur from './utils/ApplyRules/ApplyAuteur'
+import ApplyDate from './utils/ApplyRules/ApplyDate'
+import ApplyNotion from './utils/ApplyRules/ApplyNotion'
+import ApplyCle from './utils/ApplyRules/ApplyCle'
 
 export default function () {
+
+    const CHUNK_SIZE = 10_000
 
     const { view } = useEditor()
     const dispatch = useAppDispatch()
@@ -77,21 +87,40 @@ export default function () {
     const updateDeco = async (slice: Chunk) => {
 
         const newDeco = new chunkBorderClass(view as EditorView, slice.pos.startId, slice.pos.endId)
-        
+
         deco.current = newDeco
 
         const raw = decompressHtmlStyle(slice.raw, slice.dictionnaire)
 
-        const res = await (await fetch('/api/mep', {
+        const res = (await (await fetch('http://localhost:8080/', {
             method: "POST",
-            body: JSON.stringify({ raw, prompt: MEP.prompt })
-        })).json()
+            body: JSON.stringify({ raw }),
+            headers: {
+                "Content-Type": "application/json",
+            }
+        })).json())
 
-        const html = decompressHtml(res.res, slice.dictionnaire)
+        console.log(res)
+        //faire un undo. a la place d'un replace faire les deux. 
+        newDeco.loadingStop()
+        const { startPos: from, endPos: to } = newDeco.getStartPos()
 
-        console.log(html)
+        const { state, dispatch } = view!;
+        let tr = state.tr; // une seule transaction
+        
+        tr = ApplyDate(view!, res.date, from, to, tr)
+        tr = ApplyDefs(view!, res.defs, from, to, tr)
+        tr = ApplyEnonce(view!, res.enonce, from, to, tr)
+        tr = ApplyExemple(view!, res.exemple, from, to, tr)
+        tr = ApplyQuestion(view!, res.question, from, to, tr)
+        tr = ApplyAuteur(view!, res.auteur, from, to, tr)
+        tr = ApplyNotion(view!, res.notion, from, to, tr)
+        tr = ApplyCle(view!, res.cle, from, to, tr)
 
-        newDeco.replace(html)
+
+        if (tr.docChanged) dispatch(tr);
+
+
     }
     const handler2 = async (next = true as boolean) => {
         if (enable.current) {
@@ -99,8 +128,8 @@ export default function () {
             //reset le switch. 
             setGenContent(true)
 
-            //expérimentale
-            // cleanIds(view!)
+            // expérimentale
+            cleanIds(view!)
 
             //si deco.current null = error si undef = vide
             deco.current?.clean();
@@ -127,7 +156,7 @@ export default function () {
 
             console.log(start, nodeSize, "eheh")
 
-            slice.current = sliceToChunk(view!.state.doc, start, nodeSize, view!.state.schema, next, 4000)
+            slice.current = sliceToChunk(view!.state.doc, start, nodeSize, view!.state.schema, next, CHUNK_SIZE)
 
             //set afficher le comps trois. 
             !gen && setGen(true)
@@ -147,7 +176,7 @@ export default function () {
             enable.current = false
             setGenContent(true)
             //expérimentale
-            // cleanIds(view!)
+            cleanIds(view!)
 
             //si null = error si undef = vide
             const haveDeco = deco.current?.destoy() || undefined;
@@ -159,7 +188,7 @@ export default function () {
             }
 
 
-            const slice = sliceToChunk(view!.state.doc, start, 0, view!.state.schema, next, 2000)
+            const slice = sliceToChunk(view!.state.doc, start, 0, view!.state.schema, next, CHUNK_SIZE)
 
             //set afficher le comps trois. 
             !gen && setGen(true)

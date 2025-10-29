@@ -13,6 +13,7 @@ import {
   setLineHeight,
   setMarginBottom,
   setMarginTop,
+  setNodeType,
   setTextAlign,
   setUnderline,
 } from "@/comps/store/store";
@@ -47,9 +48,11 @@ export default function (dispatch: (action: any) => void) {
 
           dispatch(setLineHeight(getLineHeight(state)));
 
-          dispatch(setMarginBottom(getMarginBottom(state)))
+          dispatch(setMarginBottom(getMarginBottom(state)));
 
-          dispatch(setMarginTop(getMarginTop(state)))
+          dispatch(setMarginTop(getMarginTop(state)));
+
+          dispatch(setNodeType(getNodeType(state) as any));
         },
       };
     },
@@ -63,6 +66,47 @@ function markIsActive(state: EditorState, markType: MarkType): boolean {
     return !!markType.isInSet(state.storedMarks || $from.marks());
   } else {
     return state.doc.rangeHasMark(from, to, markType);
+  }
+}
+
+function getNodeType(state: EditorState) {
+  const { selection } = state;
+  const { from, to } = selection;
+  let value: string | null | undefined = null;
+  const target = ["heading", "paragraph"];
+  state.doc.nodesBetween(from, to, (node, pos) => {
+    if (!target.includes(node.type.name)) return;
+
+    let nodeT = null;
+    if (node.type.name === "heading") nodeT = getName(node.attrs.level);
+    else nodeT = "p";
+
+    if (value === null) {
+      value = nodeT;
+    } else if (nodeT && value !== nodeT) {
+      value = undefined;
+    }
+  });
+
+  return value;
+}
+
+function getName(lvl: number): string | undefined {
+  switch (lvl) {
+    case 1:
+      return "h1";
+    case 2:
+      return "h2";
+    case 3:
+      return "h3";
+    case 4:
+      return "h4";
+    case 5:
+      return "h5";
+    case 6:
+      return "h6";
+    default:
+      return undefined;
   }
 }
 

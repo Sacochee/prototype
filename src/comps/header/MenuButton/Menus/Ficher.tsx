@@ -5,6 +5,7 @@ import Template from './Template'
 import { useEditor } from '@/comps/editeur/Context'
 import schema from '@/comps/editeur/schemas/schema'
 import { Transaction } from 'prosemirror-state'
+import { defaultMarkdownSerializer } from "prosemirror-markdown";
 
 export default function () {
 
@@ -26,6 +27,25 @@ export default function () {
 
     URL.revokeObjectURL(url);
   }
+
+  const handlerDownloadMarkdown = () => {
+  const doc = view?.state.doc;
+  if (!doc) return;
+
+  // Conversion du document ProseMirror → Markdown
+  const markdown = defaultMarkdownSerializer.serialize(doc);
+
+  // Création et téléchargement du fichier .md
+  const blob = new Blob([markdown], { type: "text/markdown" });
+  const url = URL.createObjectURL(blob);
+
+  const a = document.createElement("a");
+  a.href = url;
+  a.download = "FICHERSAVE.md";
+  a.click();
+
+  URL.revokeObjectURL(url);
+};
 
   const handlerOpenFile = (e: React.ChangeEvent<HTMLInputElement>) => {
     //open a fileJSON et read it. 
@@ -60,6 +80,9 @@ export default function () {
         </li>
         <li onClick={handlerDownloadJson}>
           Télécharger le JSON.
+        </li>
+        <li onClick={handlerDownloadMarkdown}>
+          Télécharger le md.
         </li>
         <li>
           <input type="file" accept="application/json" onChange={handlerOpenFile} />

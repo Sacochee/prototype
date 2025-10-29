@@ -33,27 +33,23 @@ import { EditorView } from "prosemirror-view";
 
 export default class {
   private slice;
+  private from;
   private id = uuidV4();
 
   constructor(private view: EditorView, startId: string, endId: string) {
     const doc = this.view.state.doc;
 
-    console.log(startId, endId)
+    this.from = getNodePosById(startId, doc)!.pos;
 
-    const from = getNodePosById(startId, doc)!.pos;
-    console.log(from, 'FROM')
     const { node: endNode, pos: endPos } = getNodePosById(endId, doc);
-    console.log(endNode, "endNOde")
+
     const to = endPos + endNode.nodeSize;
 
     const { state, dispatch } = this.view;
     const containerType = state.schema.nodes.nodeArea;
 
     // extrait le contenu de la plage
-    this.slice = state.doc.slice(from, to);
-
-
-    console.log(from, to)
+    this.slice = state.doc.slice(this.from, to);
     // crée un nœud container avec ce contenu
     const container = containerType.create(
       { loading: true, id: this.id, type: "Correction" },
@@ -61,17 +57,19 @@ export default class {
     );
 
     // remplace la plage sélectionnée par le container
-    const tr = state.tr.replaceRangeWith(from, to, container);
+    const tr = state.tr.replaceRangeWith(this.from, to, container);
     tr.setMeta("secured", true);
 
     //refrest this.start and this.end pos avec la pos de container ?
 
     dispatch(tr);
-    (view.nodeDOM(from) as HTMLElement).scrollIntoView({
+    (view.nodeDOM(this.from) as HTMLElement).scrollIntoView({
       behavior: "smooth",
       block: "center",
     });
   }
+
+  getSlice = () => ({ slice: this.slice, from: this.from });
 
   getContent(): string {
     const { node } = getNodePosById(this.id, this.view.state.doc);
@@ -80,6 +78,31 @@ export default class {
     const wrapper = document.createElement("div");
     wrapper.appendChild(frag);
     return wrapper.innerHTML;
+  }
+
+  loadingStop() {
+    const { state, dispatch } = this.view;
+
+    const { pos: startPos, node } = getNodePosById(
+      this.id,
+      this.view.state.doc
+    );
+
+    const newNode = node.type.create(
+      { ...node.attrs, loading: false },
+      this.slice.content
+    );
+
+    const tr = state.tr.replaceWith(
+      startPos, // début du contenu interne
+      startPos + node.nodeSize, // fin du contenu interne
+      newNode
+    );
+    tr.setMeta("secured", true);
+    if (tr.docChanged) {
+      dispatch(tr);
+    }
+    return true;
   }
 
   replace(html: string) {

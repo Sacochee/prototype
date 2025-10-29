@@ -130,7 +130,7 @@ const marks: Imarks = {
       },
     ],
     toDOM: (node) => [
-      "strong",
+      "span",
       {
         style: `font-weight: ${node.attrs.fontWeight}`,
       },

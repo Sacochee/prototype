@@ -18,9 +18,6 @@ export default function ({title, setTitles} : {title : Title, setTitles : React.
             titles : t.titles.map(tt => tt.id === title.id ? {...tt, level : (tt.level || 1) < 2 ? 1 : (tt.level||2) - 1} : tt)
         }) )
     }
-
-
-    console.log(title.level, "levle -----------")
   return (
     <li style={{margin : "10px 0",marginLeft: ((title.level || 0) * 20)+"px", display: 'flex', alignItems : 'center', justifyContent : 'flex-start', gap : '5px'}}>
         <div style={{display : "flex", flexDirection : 'column'}}>
@@ -31,7 +28,7 @@ export default function ({title, setTitles} : {title : Title, setTitles : React.
                 <ArrowIcon orientation='bottom' height={9} color='#000146'/>
             </button>
         </div>
-        {title.text}
+        {title.titre}
     </li>
   )
 }

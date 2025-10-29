@@ -26,6 +26,42 @@ body {
   margin: 0;
 }
 
+h1, h1 span {
+  color: red !important;
+  font-size: 20pt !important;
+  padding-bottom: 8pt !important;
+}
+
+h2, h2 span {
+  color: red !important;
+  font-size: 18pt !important;
+  padding-bottom: 7pt !important;
+}
+
+h3, h3 span {
+  color: red !important;
+  font-size: 16pt !important;
+  padding-bottom: 6pt !important;
+}
+
+h4, h4 span {
+  color: red !important;
+  font-size: 15pt !important;
+  padding-bottom: 5pt !important;
+}
+
+h5, h5 span {
+  color: red !important;
+  font-size: 14pt !important;
+  padding-bottom: 4pt !important;
+}
+
+h6, h6 span {
+  color: red !important;
+  font-size: 13pt !important;
+  padding-bottom: 3pt !important;
+}
+
 
 /* Chaque "page" démarre après un widget page-start */
 .page-start {
@@ -64,8 +100,6 @@ body {
 .page-end {
   display: none;
 }
-
-
 
 .loading-wrapper {
   position: relative;

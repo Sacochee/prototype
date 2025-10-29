@@ -15,6 +15,8 @@ export default function () {
 
     const question = useRef<TextBoxHandle>(null);
     const reponse = useRef<TextBoxHandle>(null);
+    const [promptUser, setPromptUser] = useState("")
+    const [history, setHistory] = useState<{}[]>([])
 
     const [data, setData] = useState("")//TODO temp
 
@@ -83,10 +85,12 @@ export default function () {
     }
 
     const handlerForme = async () => {
+
         const body = {
             context: data,
             q: question.current!.getDocDom(),
             r: reponse.current!.getDocDom(),
+            prompt: promptUser
         }
 
         const res = await fetch('/api/mep-flashcard', {
@@ -107,6 +111,8 @@ export default function () {
             context: data,
             q: question.current!.getDocDom(),
             r: reponse.current!.getDocDom(),
+            prompt: promptUser,
+            history: history ? history : false
         }
 
         const res = await fetch('/api/generate-flashcard', {
@@ -120,9 +126,12 @@ export default function () {
         if (json.ok) {
             reponse.current!.setContentHtml(json.r)
             question.current!.setContentHtml(json.q)
+            setHistory(json.history)
+            setPromptUser("")
         }
     }
 
+    // faire des répons multi quesitons
     const handlerSave = (e: React.FormEvent<HTMLFormElement>) => {
 
         e.preventDefault();
@@ -140,7 +149,7 @@ export default function () {
             body: JSON.stringify(body)
         }).then(res => res.json()).then(json => {
             if (json.ok) {
-                alert('Saved')
+                // alert('Saved')
                 question.current!.clear()
                 reponse.current!.clear()
             } else {
@@ -161,12 +170,18 @@ export default function () {
             <div>
                 <TextBox ref={question} />
                 <div>
-                    <button onClick={handlerApi}>regen</button>
                     <button onClick={switchQnR}>switch</button>
                     <button onClick={handlerForme}>forme</button>
                 </div>
                 <TextBox ref={reponse} />
-                <button onClick={handler}></button>
+                <div style={{ display: 'flex' }}>
+                    <button onClick={handler}>Context</button>
+                </div>
+
+                <div style={{ display: 'flex' }}>
+                    <textarea value={promptUser || ""} onChange={(e) => setPromptUser(e.target.value)}></textarea>
+                    <button onClick={handlerApi}>générer</button>
+                </div>
 
                 <form onSubmit={handlerSave}>
                     <select name="dir" id="" required>

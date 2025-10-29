@@ -15,10 +15,13 @@ import { Chunk, sliceToChunk } from '../utils/ChunkBuilder'
 import { EditorView } from 'prosemirror-view'
 import decompressHtmlStyle from '../mep/utils/unCompressHhtmlStyle'
 import PlanMap from './comps/planMap/PlanMap'
+import { CleanHtmlString } from './Utils'
+import { constrainedMemory } from 'process'
+import ApplyNode from './comps/ApplyNode'
 
-export type Title = 
+export type Title =
     {
-        text: string, level?: number,
+        titre: string, level?: number,
         id: string
     }
 
@@ -55,7 +58,6 @@ export default function PlanGenerator() {
             switchPageFormat(view!, store, true)
         }
 
-
     }, [])
 
     const closeHandler = () => {
@@ -73,21 +75,23 @@ export default function PlanGenerator() {
 
         deco.current = newDeco
 
-        const raw = decompressHtmlStyle(slice.raw, slice.dictionnaire)
+        //condense le html en 
+        const raw = CleanHtmlString(slice.raw)
 
-        //change. 
         const res = await (await fetch('/api/plan', {
             method: "POST",
             body: JSON.stringify({ chunk: raw })
         })).json()
 
-        console.log(res)
 
         if (res.status === "ok") {
             if (res.titles.length > 0) {
-                setTitle(s => ({ ...s, titles: [...s.titles, ...res.titles] }))
+                const titles = res.titles.map((item: { titre: string, id: string }) => ({
+                    id: slice.dictionnaire[item.id], titre: item.titre
+                }))
+                setTitle(s => ({ ...s, titles: [...s.titles, ...titles] }))
             }
-            newDeco.replace(decompressHtmlStyle(slice.raw, slice.dictionnaire))
+            newDeco.loadingStop()
             running.current = false
             handler2()
         }
@@ -156,12 +160,23 @@ export default function PlanGenerator() {
         })
 
         const json = await res.json()
+        console.log(json, "json respspp")
+        if (json.status === "ok") {
 
-        if(json.status === "ok"){
-            console.log(json.titles, "ordered ------------------------------------")
-            setTitle(s => ({ ...s, titles: json.titles }))
+            setTitle(s => ({ ...s, titles: json.res }))
         }
     }
+
+    const handlerApply = () => {
+        const { state, dispatch } = view!;
+        let tr = state.tr; // une seule transaction
+
+        for (const t of title.titles) {
+            tr = ApplyNode(t, state, tr) || tr;
+        }
+
+        if (tr.docChanged) dispatch(tr);
+    };
 
     return (
         <div style={{ width: "330px" }} className={styleFromCorrection.global}>
@@ -184,11 +199,12 @@ export default function PlanGenerator() {
             </div>
             <button onClick={handler2}>handler2</button>
             <button onClick={handlerClass}>class</button>
+            <button onClick={handlerApply}>Apply</button>
             {gen &&
                 (
                     <div className={styleFromCorrection.forceCursorInitial}>
                         {title.titles.length > 0 && (
-                            <PlanMap titles={title.titles} setTitles={setTitle}/>
+                            <PlanMap titles={title.titles} setTitles={setTitle} />
                         )}
                     </div>
                 )

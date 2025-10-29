@@ -2,6 +2,7 @@
 import { configureStore, createSlice, PayloadAction } from "@reduxjs/toolkit";
 import { TypedUseSelectorHook, useDispatch, useSelector } from "react-redux";
 import { enumTextAlign } from "../editeur/commands/AlignText";
+import { enumType } from "../editeur/commands/ChangeBlockType";
 
 const data = createSlice({
   name: "data",
@@ -19,6 +20,7 @@ const data = createSlice({
     marginBottom: undefined as undefined | number,
     selection: undefined as undefined | { from: number; to: number },
     pages: true as boolean,
+    nodeType : undefined as undefined | enumType
   },
   reducers: {
     setPages: (state, action: PayloadAction<boolean>) => ({
@@ -87,6 +89,9 @@ const data = createSlice({
       ...state,
       selection: action.payload,
     }),
+    setNodeType : (state, action : PayloadAction<undefined | enumType>) => ({
+      ...state, nodeType : action.payload
+    })
   },
 });
 
@@ -95,6 +100,7 @@ export const {
   setUnderline,
   setItalic,
   setFontSize,
+  setNodeType,
   setFontFamily,
   setFontColor,
   setBackgroundColor,

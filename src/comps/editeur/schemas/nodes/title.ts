@@ -67,7 +67,7 @@ export const NodeHeading: NodeSpec = {
     id: { default: "" },
     textAlign: { default: DEFAULT_TEXT_ALIGN },
     paddingTop: { default: DEFAULT_PADDING_TOP },
-    paddingBottom: { default: DEFAULT_PADDING_BOTTOM },
+    paddingBottom: { default: 20 },
     textIndente: { default: DEFAULT_TEXT_INDENTE },
     lineHeight: { default: DEFAULT_LINE_HIGHT },
     paddingLeft: { default: DEFAULT_PADDING_LEFT },
@@ -86,7 +86,7 @@ export const NodeHeading: NodeSpec = {
   ],
   toDOM(node) {
     return [
-      "h" + node.attrs.level,
+      "h" + (node.attrs.level > 6 ? 6 : node.attrs.level),
       {
         style: `
           text-align:${node.attrs.textAlign};
@@ -96,6 +96,8 @@ export const NodeHeading: NodeSpec = {
           padding-left: ${node.attrs.paddingLeft}pt;
           padding-right: ${node.attrs.paddingRight}pt;
           margin: 0;
+          color:red!important;
+          font-size:20pt!important;
           `,
         "data-id": node.attrs.id,
       },

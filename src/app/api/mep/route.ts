@@ -5,6 +5,12 @@ import path from "path";
 import api from "../API";
 import { RulePrompt } from "@/comps/ToolSection/mep/Context";
 
+//TODO agents // transformer html en md 
+// Mistral Agent. // GIT, devops. 
+// junior entreprise 
+// observabilité grafana
+// faire power point arhci drive.  
+
 function delay(ms: number): Promise<void> {
   return new Promise((resolve) => setTimeout(resolve, ms));
 }
@@ -51,6 +57,8 @@ export async function POST(req: Request) {
 
     const res = await api(promptApi);
 
+    //DEV check
+    // return NextResponse.json({ res: raw });
     return NextResponse.json({ res: res });
   } catch (err) {
     console.error(err);

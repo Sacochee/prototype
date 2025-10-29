@@ -1,40 +1,27 @@
-import { NextResponse } from "next/server";
 import fs from "fs";
 import path from "path";
-import api from "../API";
-import { title } from "process";
+import api, { ResponseApi } from "../API";
+import { MessageBuilderPlan } from "./MessageBuilder";
+import { NextResponse } from "next/server";
+import cleanResponse from "../CleanResponse";
 
 export async function POST(req: Request) {
   const { chunk } = await req.json();
 
-  const filePath = path.join(process.cwd(), "src", "prompts", "PlanGet.md");
-  const promptTemplate = fs.readFileSync(filePath, "utf8");
+  let message = MessageBuilderPlan(chunk);
 
-  const fnc = () => api(promptTemplate.replace("{chunk}", chunk));
+  try {
+    const res = await ResponseApi(message);
+    console.log(res);
+    const json = JSON.parse(cleanResponse(res || ""));
 
-  let boucle = 0;
-  let lastRes: string | null;
-
-  async function parseJson() {
-    boucle++;
-    if (boucle > 5) {
-      console.error(lastRes);
-      return NextResponse.json(
-        { status: "ok", message: "Fichier introuvable.", titles: [] },
-        { status: 404 }
-      );
-    }
-
-    const response = await fnc();
-    lastRes = response;
-    try {
-      const data = JSON.parse(response || "[]");
-      console.log(data);
-      return NextResponse.json({ status: "ok", titles: data });
-    } catch (err) {
-      return parseJson();
-    }
+    return NextResponse.json({ status: "ok", titles: json });
+  } catch (err) {
+    //faire le fils de discution.
+    console.error(err);
+    return NextResponse.json({ status: "ok", error: true, titles: [] });
   }
 
-  return parseJson();
+  //2. check et si faux faire un fils de discution et
+  //3. faire sur passage critque afin d'amélreore la précison pour autant je ne sias pas avec quoi coriser pour avoir un meiileur rendu.
 }
