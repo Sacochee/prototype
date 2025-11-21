@@ -20,13 +20,27 @@ export async function POST(req: Request) {
 
     const unoconvPath = path.resolve("src", "scripts", "unoconv.py");
 
-    await new Promise((resolve, reject) => {
-      execFile(
-        "python",
-        [unoconvPath, "-f", "html", "-o", outputPath, "--port 2002", inputPath],
-        (err) => (err ? reject(err) : resolve(() => {}))
-      );
-    });
+   await new Promise((resolve, reject) => {
+  execFile(
+    "/usr/bin/python3",
+    [
+      unoconvPath,
+      "-f", "html",
+      "-o", outputPath,
+      "--port", "2002",
+      inputPath
+    ],
+    (err, stdout, stderr) => {
+      if (err) {
+        console.error("ERROR:", err);
+        console.error("STDERR:", stderr);
+        return reject(err);
+      }
+      resolve(null);
+    }
+  );
+});
+
 
     const html = await readFile(outputPath, "utf8");
 
