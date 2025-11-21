@@ -4,10 +4,8 @@ import { PlanTitle, TitleProps } from "@/types/plan/types"
 import TitleComps from "../Title/TitleComps"
 import style from './style.module.css'
 import Bar from "../bottomBar/Bar"
-import FlecheAQueuIcon from "@/comps/Icons/svg/FlecheAQueuIcon"
 import GestionaireTitre from "../gestionStyle/GestionaireTitre"
 import { useAppSelector } from "@/comps/store/store"
-import { setLockNodeAreaDeletion } from "@/comps/editeur/plugins/temporary/LockFullDelNodeArea"
 import EclairLoading from "@/comps/loading/eclairLoading/EclairLoading"
 
 type Props = { titles: PlanTitle[], setTitles: React.Dispatch<React.SetStateAction<TitleProps>>, setPopup: React.Dispatch<React.SetStateAction<boolean>> }
