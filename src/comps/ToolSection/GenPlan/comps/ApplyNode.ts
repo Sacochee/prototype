@@ -1,9 +1,9 @@
 import { EditorState, Transaction } from "prosemirror-state";
-import { Title } from "../PlanGenerator";
 import { Node } from "prosemirror-model";
+import { PlanTitle } from "@/types/plan/types";
 
 export default function ApplyNode(
-  title: Title,
+  title: PlanTitle,
   state: EditorState,
   tr: Transaction
 ): Transaction | null {
@@ -22,7 +22,7 @@ export default function ApplyNode(
 
   if (nodeTarget && typeof posTarget === "number") {
     const newNode = schema.nodes.heading.create(
-      { level: title.level || 1 },
+      { level: title.level || 6 },
       nodeTarget.content,
       nodeTarget.marks
     );

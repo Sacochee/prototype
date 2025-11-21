@@ -5,7 +5,6 @@ import { EditorView } from 'prosemirror-view'
 import schema from './schemas/schema'
 import { placeCursorCommand } from './commands'
 import KeyMap from './plugins/KeyMap'
-import { } from 'prosemirror-schema-list'
 import { useAppDispatch } from '../store/store'
 import { useEditor } from './Context'
 import SelectionPlugin from './plugins/SelectionPlugin'
@@ -15,8 +14,6 @@ import { decoPlugin } from './plugins/dynamicDeco'
 import { lockNodeAreaDeletionPlugin } from './plugins/temporary/LockFullDelNodeArea'
 import { lockWhenLoadingPlugin } from './plugins/temporary/LockWhenLoading'
 import ensureNodeIds from './plugins/forceId'
-import { Node } from 'prosemirror-model'
-import data from '../../../public/initDoc.json'
 import SelectionGetter from './plugins/SelectionGetter'
 import { store } from '../store/store'
 
@@ -28,11 +25,9 @@ export default function () {
   const dispach = useAppDispatch()
 
   useEffect(() => {
-
-
     const view = new EditorView(editorRef.current, {
       state: EditorState.create({
-        doc: Node.fromJSON(schema, data),
+        schema: schema,
         plugins: [
           KeyMap,
           SelectionPlugin(dispach),
@@ -51,13 +46,10 @@ export default function () {
     return () => { view.destroy(); setView(null) }
   }, [])
 
-  const focus = () => { }
-  // placeCursorCommand(view)
-
   return <div ref={editorRef}
     style={{ overflowX: 'auto' }}
-    // style={{ width: '606px', border: '1px solid black', height: '1123px', padding: '94', fontFamily: 'Arial' }} 
-    onClick={focus} />
+  // style={{ width: '606px', border: '1px solid black', height: '1123px', padding: '94', fontFamily: 'Arial' }} 
+  />
 }
 
 

@@ -1,0 +1,59 @@
+.popupContainer {
+  /* Le Div du Tools_Selection est en relative. */
+  position: fixed;
+  top: 0;
+  left: 0;
+  inset: 0;
+  z-index: 999;
+  width: 100vw;
+  /* Header a 120px */
+  height: 100vh;
+
+}
+
+.container {
+  padding: 70px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.loading{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 30px
+}
+
+.gen,
+.titles {
+  background-color: var(--trustBlue);
+  color: var(--white);
+
+  border: 1px solid var(--trustBlue);
+  border-radius: 10px;
+
+  padding: 5px 20px;
+  cursor: pointer;
+
+  align-self: center;
+}
+
+.titles {
+  background-color: var(--corporateBlue);
+
+  border-color: var(--corporateBlue);
+}
+
+@media (hover: hover) {
+  .gen:hover {
+    background-color: var(--white);
+    color: var(--trustBlue);
+  }
+
+  .titles:hover {
+    background-color: var(--white);
+    color: var(--corporateBlue);
+  }
+}

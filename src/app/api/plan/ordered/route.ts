@@ -1,29 +1,17 @@
-import fs from "fs";
-import path from "path";
-import api, { ResponseApi } from "../../API";
 import { NextResponse } from "next/server";
-import { MessageBuilderPlanclass } from "./MessageBuilder";
-import cleanResponse from "../../CleanResponse";
-
-type titles = [
-  {
-    text: string;
-    id: string;
-    lvl?: number;
-  }
-];
+import { PlanTitle, TitlePlanRequestRaw } from "@/types/plan/types";
+import ClassTitle from "@/agent/title/ClassTitle";
+import TokenCount from "@/agent/mep/utils/TokenCount";
 
 export async function POST(req: Request) {
-  const { titles } = (await req.json()) as { titles: titles };
-
-  const messages = MessageBuilderPlanclass(JSON.stringify(titles));
+  const { titles } = (await req.json()) as { titles: PlanTitle[] };
+  const finalTitles = titles.map((item) => ({ ...item, lvl: 0 }));
+  const Token = new TokenCount();
 
   try {
-    const res = await ResponseApi(messages);
-    console.log(res);
-    const json = JSON.parse(cleanResponse(res || ""));
+    const res = await ClassTitle(finalTitles, Token);
 
-    return NextResponse.json({ status: "ok", res: json });
+    return NextResponse.json({ ok: true, res });
   } catch (err) {
     console.error(err);
     return NextResponse.json({ status: "error", res: [] });

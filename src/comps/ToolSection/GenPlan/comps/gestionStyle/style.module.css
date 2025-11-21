@@ -1,0 +1,107 @@
+.bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  width: 100vw;
+  height: 100vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: #ffffff20;
+  backdrop-filter: blur(2px);
+}
+.main {
+  display: flex;
+
+  width: 700px;
+  background-color: var(--gris1);
+
+  border-radius: 20px;
+}
+.nav {
+  background-color: var(--gris2);
+  padding: 30px;
+
+  border-radius: 20px;
+}
+
+.nav > div {
+  font-size: 15pt;
+  font-weight: 600;
+
+  color: var(--corporateBlue);
+  padding: 5px 10px;
+  border-radius: 10px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 80px;
+}
+
+.active {
+  background-color: var(--corporateBlue);
+  color: var(--white) !important;
+}
+
+.title {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  width: calc(700px - 80px);
+  padding: 10px 30px;
+}
+.title > [id="name"] {
+  background-color: var(--corporateBlue);
+  border-radius: 20px;
+  font-weight: 600;
+  font-size: 20pt;
+  padding: 10px;
+
+  display: flex;
+  justify-content: center;
+
+  color: var(--white);
+}
+
+.title [id="menu"] {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  background-color: var(--gris2);
+
+  border-radius: 10px;
+  padding: 5px 10px;
+}
+
+.split {
+  background-color: var(--gris3);
+  height: 20px;
+  width: 2px;
+  display: block;
+  margin: 0 5px;
+  content: "";
+}
+
+.title [id="exemple"] {
+  background-color: var(--white);
+
+  padding: 30px;
+  border-radius: 20px;
+}
+
+@media (hover: hover) {
+  .nav > div:hover {
+    background-color: var(--gris3);
+    cursor: pointer;
+  }
+
+  .active:hover {
+    background-color: var(--corporateBlue) !important;
+  }
+}

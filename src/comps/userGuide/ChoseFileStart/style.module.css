@@ -1,0 +1,46 @@
+.main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 500px;
+  height: 500px;
+}
+
+.main > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+.main > div > button {
+  padding: 5px 20px;
+
+  border-radius: 10px;
+
+  border: 1px solid transparent;
+  background-color: var(--gris1);
+
+  font-size: 13pt;
+
+  width: 200px;
+}
+
+.main > div > button:first-child {
+  background-color: var(--trustBlue);
+  color: var(--white);
+}
+
+@media (hover: hover) {
+  .main > div > button:first-child:hover {
+    background-color: var(--gris1);
+    color: var(--corporateBlue);
+    border-color: var(--corporateBlue)
+  }
+
+  .main > div > button:last-child:hover {
+   
+    border-color: var(--corporateBlue)
+  }
+}

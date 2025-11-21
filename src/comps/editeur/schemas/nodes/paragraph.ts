@@ -87,10 +87,11 @@ export const Paragraph: ParagraphNode = {
             paddingTop: toPt(paddingTop),
           });
 
-        const paddingBottom = dom.style.paddingBottom;
-        if (paddingBottom)
+        const marginBottom = dom.style.marginBottom;
+        if (marginBottom)
+
           Object.assign(attrs, {
-            paddingBottom: toPt(paddingBottom),
+            paddingBottom: toPt(marginBottom),
           });
 
         if (attrs) return attrs;
@@ -99,6 +100,7 @@ export const Paragraph: ParagraphNode = {
     },
   ],
   toDOM: (node) => {
+   
     return [
       "p",
       {

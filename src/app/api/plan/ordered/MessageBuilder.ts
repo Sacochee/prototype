@@ -1,7 +1,7 @@
 import fs from "fs";
 import path from "path";
 
-export function MessageBuilderPlanclass(raw: string): any[] {
+export function MessageBuilderPlan(raw: string): any[] {
   const systemPath = path.join(
     process.cwd(),
     "src",

@@ -1,8 +1,14 @@
 // store.ts
-import { configureStore, createSlice, PayloadAction } from "@reduxjs/toolkit";
+import {
+  configureStore,
+  createSelector,
+  createSlice,
+  PayloadAction,
+} from "@reduxjs/toolkit";
 import { TypedUseSelectorHook, useDispatch, useSelector } from "react-redux";
 import { enumTextAlign } from "../editeur/commands/AlignText";
-import { enumType } from "../editeur/commands/ChangeBlockType";
+import { enumType } from "../editeur/commands/titles/ChangeBlockType";
+import { TitreStyle } from '@/types/plan/types'
 
 const data = createSlice({
   name: "data",
@@ -20,7 +26,7 @@ const data = createSlice({
     marginBottom: undefined as undefined | number,
     selection: undefined as undefined | { from: number; to: number },
     pages: true as boolean,
-    nodeType : undefined as undefined | enumType
+    nodeType: undefined as undefined | enumType,
   },
   reducers: {
     setPages: (state, action: PayloadAction<boolean>) => ({
@@ -89,9 +95,10 @@ const data = createSlice({
       ...state,
       selection: action.payload,
     }),
-    setNodeType : (state, action : PayloadAction<undefined | enumType>) => ({
-      ...state, nodeType : action.payload
-    })
+    setNodeType: (state, action: PayloadAction<undefined | enumType>) => ({
+      ...state,
+      nodeType: action.payload,
+    }),
   },
 });
 
@@ -157,11 +164,185 @@ const notifications = createSlice({
 
 export const { setMessage } = notifications.actions;
 
+export type TitleStyleType = {
+  name: string;
+  target: number;
+  style: TitreStyle;
+};
+const TitleStyle = createSlice({
+  name: "titleStyle",
+  initialState: [
+    {
+      name: "Default",
+      target: 0,
+      style: {
+        bold: false,
+        italic: false,
+        underline: false,
+        fontSize: "11pt",
+        police: "Arial",
+        color: "#99a1a9",
+        backgroundColor: undefined,
+      },
+    },
+    {
+      name: "Titre 1",
+      target: 1,
+      style: {
+        bold: true,
+        italic: false,
+        underline: false,
+        fontSize: "15pt",
+        police: "Arial",
+        color: "#c00000",
+        backgroundColor: undefined,
+      },
+    },
+    {
+      name: "Titre 2",
+      target: 2,
+      style: {
+        bold: true,
+        italic: false,
+        underline: false,
+        fontSize: "13pt",
+        police: "Arial",
+        color: "#c00000",
+        backgroundColor: undefined,
+      },
+    },
+    {
+      name: "Titre 3",
+      target: 3,
+      style: {
+        bold: false,
+        italic: false,
+        underline: false,
+        fontSize: "12pt",
+        police: "Arial",
+        color: "#c00000",
+        backgroundColor: undefined,
+      },
+    },
+    {
+      name: "Titre 4",
+      target: 4,
+      style: {
+        bold: true,
+        italic: true,
+        underline: false,
+        fontSize: "11pt",
+        police: "Arial",
+        color: "#c00000",
+        backgroundColor: undefined,
+      },
+    },
+    {
+      name: "Titre 5",
+      target: 5,
+      style: {
+        bold: true,
+        italic: true,
+        underline: false,
+        fontSize: "11pt",
+        police: "Arial",
+        color: "#c00000",
+        backgroundColor: undefined,
+      },
+    },
+    {
+      name: "Titre 6",
+      target: 6,
+      style: {
+        bold: true,
+        italic: true,
+        underline: false,
+        fontSize: "11pt",
+        police: "Arial",
+        color: "#c00000",
+        backgroundColor: undefined,
+      },
+    },
+    {
+      name: "Titre 7",
+      target: 7,
+      style: {
+        bold: true,
+        italic: true,
+        underline: false,
+        fontSize: "11pt",
+        police: "Arial",
+        color: "#c00000",
+        backgroundColor: undefined,
+      },
+    },
+    {
+      name: "Titre 8",
+      target: 8,
+      style: {
+        bold: true,
+        italic: true,
+        underline: false,
+        fontSize: "11pt",
+        police: "Arial",
+        color: "#c00000",
+        backgroundColor: undefined,
+      },
+    },
+    {
+      name: "Titre 9",
+      target: 9,
+      style: {
+        bold: true,
+        italic: true,
+        underline: false,
+        fontSize: "11pt",
+        police: "Arial",
+        color: "#c00000",
+        backgroundColor: undefined,
+      },
+    },
+    {
+      name: "Titre 10",
+      target: 10,
+      style: {
+        bold: true,
+        italic: true,
+        underline: false,
+        fontSize: "11pt",
+        police: "Arial",
+        color: "#c00000",
+        backgroundColor: undefined,
+      },
+    },
+  ] as TitleStyleType[],
+  reducers: {
+    changeStyle: (
+      state,
+      action: PayloadAction<{ style: any; name: string }>
+    ) => {
+      return state.map((item) =>
+        item.name === action.payload.name
+          ? { ...item, style: { ...item.style, ...action.payload.style } }
+          : item
+      );
+    },
+  },
+});
+
+export const { changeStyle } = TitleStyle.actions;
+export const selectTitleStyleByTarget = (target: number) =>
+  createSelector(
+    (state: RootState) => state.titleStyle,
+    (titleStyles) => titleStyles.find((item) => item.target === target)
+  );
+
 export const store = configureStore({
   reducer: {
     data: data.reducer,
     pages: pages.reducer,
     notifications: notifications.reducer,
+    titleStyle: TitleStyle.reducer,
   },
 });
 

@@ -3,7 +3,7 @@ import style from './style.module.css'
 
 export default function () {
 
-    const [change, setChange] = useState('Droit des contrats') //TODO change
+    const [change, setChange] = useState('FlashQuizz') //TODO change
 
     const mirrorRef = useRef<HTMLSpanElement>(null)
     const inputRef = useRef<HTMLInputElement>(null)
@@ -22,7 +22,7 @@ export default function () {
 
     return (
 
-        <div className={style.wrap}>
+        <div className={style.wrap} >
             <input type='text' name='DocTitle' value={change} onChange={handler} className={style.input} ref={inputRef} />
         </div>
 

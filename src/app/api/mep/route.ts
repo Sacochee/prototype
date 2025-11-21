@@ -4,62 +4,27 @@ import fs from "fs";
 import path from "path";
 import api from "../API";
 import { RulePrompt } from "@/comps/ToolSection/mep/Context";
+import AgentIaMiseEnPage from "@/agent/mep/main";
 
-//TODO agents // transformer html en md 
-// Mistral Agent. // GIT, devops. 
-// junior entreprise 
+//TODO agents // transformer html en md
+// Mistral Agent. // GIT, devops.
+// junior entreprise
 // observabilité grafana
-// faire power point arhci drive.  
+// faire power point arhci drive.
 
 function delay(ms: number): Promise<void> {
   return new Promise((resolve) => setTimeout(resolve, ms));
 }
 
 export async function POST(req: Request) {
-  function buildString(rule: RulePrompt): string {
-    return `<description>
-      ${rule.desc}
-      </description>
-      <règle_mise_en_forme>
-      ${rule.miseEnForme}
-      </règle_mise_en_forme>
-      <exemples>
-      ${rule.exemple.map(
-        (item) => `
-        <exemple>
-          <input>
-          ${item.input}
-          </input>
-          <output>
-          ${item.output}
-          </output>
-        </exemple>
-        `
-      )}
-      </exemples>`;
-  }
-
   try {
     const body = await req.json();
-    const { raw, prompt } = body as { raw: string; prompt: RulePrompt[] };
-    const filePath = path.join(
-      process.cwd(),
-      "src",
-      "prompts",
-      "MEPTemplatePrompt.md"
-    );
-    const promptTemplate = fs.readFileSync(filePath, "utf8");
+    const { raw } = body as { raw: string; prompt: RulePrompt[] };
 
-    const promptApi = promptTemplate
-      .replace("{prompt}", prompt.map((item) => buildString(item)).join("\n"))
-      .replace("{texte}", raw);
-    console.log(promptApi);
-
-    const res = await api(promptApi);
-
+    const res = await AgentIaMiseEnPage(raw);
     //DEV check
     // return NextResponse.json({ res: raw });
-    return NextResponse.json({ res: res });
+    return NextResponse.json(res);
   } catch (err) {
     console.error(err);
     return NextResponse.json({ error: "Invalid JSON" }, { status: 400 });

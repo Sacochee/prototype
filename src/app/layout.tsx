@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import "./globals.css";
 import { Inter, Rokkitt } from 'next/font/google'
 import "../comps/editeur/schemas/nodes/temporary/globalNodeTemporary.css"
+import { ClientSessionProvider } from "@/lib/SessionProvider";
+
 
 // Inter → police par défaut
 const inter = Inter({
@@ -27,7 +29,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="fr" className={`${inter.variable} ${rokkitt.variable}`}>
-      <body className="font-sans">{children}</body>
+      <ClientSessionProvider>
+        <body className="font-sans">{children}</body>
+      </ClientSessionProvider>
     </html>
   );
 }

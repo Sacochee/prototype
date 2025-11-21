@@ -92,7 +92,7 @@ export default function () {
 
         const raw = decompressHtmlStyle(slice.raw, slice.dictionnaire)
 
-        const res = (await (await fetch('http://localhost:8080/', {
+        const res = (await (await fetch('/api/mep', {
             method: "POST",
             body: JSON.stringify({ raw }),
             headers: {
@@ -109,7 +109,7 @@ export default function () {
         let tr = state.tr; // une seule transaction
         
         tr = ApplyDate(view!, res.date, from, to, tr)
-        tr = ApplyDefs(view!, res.defs, from, to, tr)
+        tr = ApplyDefs(view!, res.def, from, to, tr)
         tr = ApplyEnonce(view!, res.enonce, from, to, tr)
         tr = ApplyExemple(view!, res.exemple, from, to, tr)
         tr = ApplyQuestion(view!, res.question, from, to, tr)

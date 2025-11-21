@@ -1,7 +1,7 @@
 "use client"
 import React, { useState } from 'react'
 import MenuButtons from './MenuButtons'
-import Ficher from './Menus/Ficher'
+import Ficher from './Menus/ficher/Ficher'
 import Edition from './Menus/Edition'
 import Affichage from './Menus/Affichage'
 import Insertion from './Menus/insertion/Insertion'

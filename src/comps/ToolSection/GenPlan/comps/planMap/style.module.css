@@ -1,0 +1,64 @@
+.planMap {
+  width: 100vw;
+  height: 100vh;
+  background-color: #fff;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.triangle {
+  display: block;
+  --s: 10px; /* longueur du côté */
+  width: 0;
+  height: 0;
+  border-top: calc(var(--s) / 2) solid transparent;
+  border-bottom: calc(var(--s) / 2) solid transparent;
+  /* hauteur = 0.8660254 * s */
+  border-right: calc(var(--s) * 0.8660254) solid var(--white); /* couleur du triangle */
+}
+
+.ul {
+  list-style: none;
+  overflow-y: scroll;
+  height: calc(100vh - 100px - 50px);
+  margin: 0;
+  padding: 0 50px;
+  padding-top: 50px;
+}
+
+.closeBtn {
+  border: 1px solid var(--corporateBlue);
+  background-color: var(--corporateBlue);
+
+  color: var(--white);
+
+  height: 30px;
+
+  width: 100px;
+
+  border-radius: 10px;
+
+  margin-left: 20px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+
+  cursor: pointer;
+}
+
+@media (hover: hover) {
+  .closeBtn:hover {
+    background-color: var(--white);
+    color: var(--corporateBlue);
+  }
+
+  .closeBtn:hover .triangle {
+    border-right-color: var(--corporateBlue);
+  }
+}

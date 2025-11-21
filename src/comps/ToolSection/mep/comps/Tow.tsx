@@ -76,30 +76,8 @@ export default function One({ nextHandler, open }: { nextHandler: () => void, op
         <Wrapper title='2. Paramètre' ref={wraper} callback={open}>
             <div className={style.tow}>
                 <div>
-                    <button onClick={dlHandler}>
-                        Save
-                    </button>
-                    <input type="file" accept="application/json" onChange={loadHandler} />
-                    <button onClick={handlerClear}>
-                        clear DATA
-                    </button>
+                    pas de personalisation possible pour le moment.
                 </div>
-                <div>
-                    Règles de mise en forme :
-                </div>
-                <ul style={{maxHeight : 200, overflowY : "scroll"}}>
-                    {
-                        MEP.prompt && MEP.prompt.map((el, i) => (
-                            <RuleComps key={i} rule={el} />
-                        ))
-                    }
-                    <PopUp state={newRule} close={close}>
-                        <EditRule close={close} />
-                    </PopUp>
-                </ul>
-                <button onClick={openRule}>
-                    Nouvelle règle
-                </button>
                 <div style={{
                     display: 'flex',
                     justifyContent: 'flex-end'

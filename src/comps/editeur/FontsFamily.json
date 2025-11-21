@@ -9,6 +9,7 @@
   ["Garamond", "Garamond, serif"],
   ["Georgia", "Georgia, serif"],
   ["Times New Roman", "\"Times New Roman\", Times, serif"],
+  ["Calibri", "Calibri, Candara, Segoe, 'Segoe UI', Optima, Arial, sans-serif"],
 
   ["Consolas", "Consolas, \"Courier New\", monospace"],
   ["Courier New", "\"Courier New\", Courier, monospace"],

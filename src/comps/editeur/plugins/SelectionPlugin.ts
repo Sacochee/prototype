@@ -105,6 +105,14 @@ function getName(lvl: number): string | undefined {
       return "h5";
     case 6:
       return "h6";
+    case 7:
+      return "h7";
+    case 8:
+      return "h8";
+    case 9:
+      return "h9";
+    case 10:
+      return "h10";
     default:
       return undefined;
   }
@@ -126,7 +134,7 @@ function getMarginBottom(state: EditorState): number | undefined {
   // Cas curseur (sélection vide)
   if (empty) {
     const parent = $from.parent;
-    return parent?.attrs.marginBottom || null;
+    return parent?.attrs.paddingBottom || null;
   }
 
   // Cas sélection étendue
@@ -135,7 +143,7 @@ function getMarginBottom(state: EditorState): number | undefined {
   state.doc.nodesBetween(from, to, (node) => {
     if (!node.isBlock) return; // On ne regarde que les blocks
 
-    const nodeMarginBottom = node.attrs.marginBottom || null;
+    const nodeMarginBottom = node.attrs.paddingBottom || null;
 
     if (value === null) {
       value = nodeMarginBottom;
@@ -153,7 +161,7 @@ function getMarginTop(state: EditorState): number | undefined {
   // Cas curseur (sélection vide)
   if (empty) {
     const parent = $from.parent;
-    return parent?.attrs.marginTop || null;
+    return parent?.attrs.paddingTop || null;
   }
 
   // Cas sélection étendue
@@ -162,7 +170,7 @@ function getMarginTop(state: EditorState): number | undefined {
   state.doc.nodesBetween(from, to, (node) => {
     if (!node.isBlock) return; // On ne regarde que les blocks
 
-    const nodeMarginTop = node.attrs.marginTop || null;
+    const nodeMarginTop = node.attrs.paddingTop || null;
 
     if (value === null) {
       value = nodeMarginTop;

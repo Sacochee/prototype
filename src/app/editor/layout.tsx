@@ -2,13 +2,13 @@
 
 import { DataProvider } from "../../comps/ToolSection/ToolsContexte"
 
-export default function layout({children} : {children : React.ReactNode}) {
+export default function layout({ children }: { children: React.ReactNode }) {
   return (
-    <div style={{overflow:'hidden'}}>
-  <DataProvider>
+    <div style={{ overflow: 'hidden' }}>
+      <DataProvider>
         {children}
-    </DataProvider>
+      </DataProvider>
     </div>
-  
+
   )
 }

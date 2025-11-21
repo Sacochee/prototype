@@ -1,0 +1,35 @@
+.points {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+
+  width: 12px;
+}
+
+.points span {
+  width: 4px;
+  height: 4px;
+  border-radius: 5px;
+  display: block;
+  background-color: #99a1a9;
+}
+
+.editIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 15px;
+cursor: pointer;
+  padding: 5px;
+  border-radius:20px
+}
+
+@media (hover: hover) {
+  .points:hover span {
+    transform: scale(1.2);
+  }
+
+  .editIcon:hover {
+    background-color: var(--gris3);
+  }
+}

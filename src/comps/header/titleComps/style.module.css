@@ -4,6 +4,7 @@
 }
 
 .input {
+  margin: 10px 0;
   border: 2px solid transparent;
   border-radius: 2.5px;
   width: fit-content;

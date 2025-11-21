@@ -8,6 +8,10 @@ import {
 import { AddMark } from "./marks/temporary/markAdd";
 import { DelMark } from "./marks/temporary/markDel";
 import { EditMark } from "./marks/temporary/markEdit";
+import { FontColorMark } from "./marks/Color";
+import { FontSizeMark } from "./marks/FontSize";
+import { FontFamilyMark } from "./marks/FontFamily";
+import { StrongMark } from "./marks/Strong";
 
 interface Imarks {
   /**
@@ -104,39 +108,7 @@ const marks: Imarks = {
     A strong mark. Rendered as `<strong>`, parse rules also match
     `<b>` and `font-weight: bold`.
     */
-  strong: {
-    attrs: {
-      fontWeight: { default: 800 },
-    },
-    parseDOM: [
-      {
-        tag: "strong",
-      },
-      {
-        tag: "b",
-        getAttrs: (node) => ({
-          fontWeight: node.style.fontWeight != "normal" && null,
-        }),
-      },
-      {
-        style: "font-weight=400",
-        clearMark: (m) => m.type.name == "strong",
-      },
-      {
-        style: "font-weight",
-        getAttrs: (value) => ({
-          fontWeight: /^(bold(er)?|[5-9]\d{2,})$/.test(value) && null,
-        }),
-      },
-    ],
-    toDOM: (node) => [
-      "span",
-      {
-        style: `font-weight: ${node.attrs.fontWeight}`,
-      },
-      0,
-    ],
-  },
+  strong: StrongMark,
   /**
     Code font mark. Represented as a `<code>` element.
     */
@@ -150,52 +122,13 @@ const marks: Imarks = {
     toDOM: () => ["code", 0],
   },
 
-  fontSize: {
-    attrs: {
-      fontSize: { default: DEFAUTL_FONT_SIZE },
-    },
-    parseDOM: [
-      {
-        style: "font-size",
-        getAttrs: (value) => {
-          const number = Number.parseInt(value.slice(0, -2));
-          if (!Number.isNaN(number)) return { fontSize: value.slice(0, -2) };
-          else return false;
-        },
-      },
-    ],
-    toDOM: (mark) => {
-      return [
-        "span",
-        {
-          style: `font-size: ${mark.attrs.fontSize}pt;`,
-        },
-        0,
-      ] as DOMOutputSpec;
-    },
-  },
+  fontSize: FontSizeMark,
 
   /**
    * A vocation a disparaitre. une fois toous les styles gérés.
    */
 
-  fontColor: {
-    attrs: {
-      fontColor: { default: DEFAULT_FONT_COLOR },
-    },
-    parseDOM: [
-      {
-        style: "color", getAttrs: (value) => ({ fontColor: value })
-      },
-    ],
-    toDOM: (mark) =>
-      [
-        "span",
-        { style: `color: ${mark.attrs.fontColor};` },
-        0,
-      ] as DOMOutputSpec,
-  },
-
+  fontColor: FontColorMark,
   backgroundColor: {
     attrs: {
       backgroundColor: { default: DEFAULT_BACKGROUND_COLOR },
@@ -229,27 +162,7 @@ const marks: Imarks = {
     toDOM: (mark) => ["span", { style: "text-decoration: underline;" }, 0],
   },
 
-  fontFamily: {
-    attrs: {
-      fontFamily: { default: DEFAUTL_FONT_FAMILY },
-    },
-    parseDOM: [
-      {
-        style: "font-family",
-        getAttrs: (dom) => {
-          const fontFamily = dom;
-          return { fontFamily: fontFamily };
-        },
-      },
-    ],
-    toDOM: (mark) => [
-      "span",
-      {
-        style: `font-family: ${mark.attrs.fontFamily};`,
-      },
-      0,
-    ],
-  },
+  fontFamily: FontFamilyMark,
 
   // Temporary Mark for editing texte
   addMark: AddMark,

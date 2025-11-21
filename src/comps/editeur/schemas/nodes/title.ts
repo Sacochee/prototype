@@ -96,8 +96,7 @@ export const NodeHeading: NodeSpec = {
           padding-left: ${node.attrs.paddingLeft}pt;
           padding-right: ${node.attrs.paddingRight}pt;
           margin: 0;
-          color:red!important;
-          font-size:20pt!important;
+          font-size : unset;
           `,
         "data-id": node.attrs.id,
       },

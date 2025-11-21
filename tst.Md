@@ -1,6 +1,66 @@
-On entend par pourparlers la phase non-contractuelle de la préparation. C'est une période durant laquelle des personnes intéressées par un contrat discutent des termes de celui-ci. Cette phase non-contractuelle est régie par un principe de liberté. La première exigence est qu’on n’est jamais contraint de conclure un contrat. Les parties sont libres de rentrer en pourparlers avec plusieurs partenaires parallèlement. C'est une application de la liberté contractuelle. Cette règle est issue de la jurisprudence et elle est posée à l’article 112 alinéa 1er du CC. Le deuxième alinéa de ce même article met en avant la notion de bonne foi. Des obligations qui limitent la liberté contractuelle ont été élaborées par la jurisprudence. Il s’agit principalement de l’obligation de négocier de bonne foi. Celui qui entre en pourparlers doit le faire sincèrement. Il ne doit pas transmettre des informations trompeuses, cacher des informations déterminantes et ne doit pas non-plus faire espérer à un aboutissement s’il sait que ce ne sera pas le cas. En revanche, cette obligation de bonne foi ne va pas jusqu’à obliger à dire qu’on est en train de négocier avec d’autres personnes. 
+# Rôle de l’IA :
 
-Il y a des exceptions dans l’hypothèses de personnes entre lesquelles une confiance particulière doit être respectée. À côté de cette obligation de négocier de bonne foi, il y aussi le fait que celui qui veut rompre les pourparlers doit le faire de manière non-vexatoire. Plus les pourparlers ont duré longtemps, plus la manière de les rompre doit se faire avec courtoisie et considération. Outre cette obligation, il peut également peser sur les partenaires de pourparlers une exigence de confidentialité. Les partenaires se sont échangés des informations pendant les pourparlers, elles doivent rester confidentielles. Celui qui viole ces obligations, engage sa responsabilité. Quant à la nature de cette responsabilité, il s’agit d’une responsabilité extracontractuelle tant qu’il n’y a pas de contrat. Cette solution vient de la jurisprudence. Sa nature a des conséquences sur les types de dommages auxquels ont droit les victimes. La victime doit recevoir réparation de la totalité des dommages qu’elle a subi. L’objectif est dans la mesure du possible de replacer la victime dans la situation qui aurait été la sienne si elle n’avait pas subi de dommages. Ce principe de réparation intégrale en matière de pourparlers pose le problème de respecter le principe de liberté contractuelle. Tant que le contrat n'est pas conclu, personne ne peut prétendre avoir droit aux avantages qu’il attendait du contrat. Il résulte que si les négociations n’ont pas abouti en raison de la faut de l’un des partenaires de négociations, la victime peut invoquer deux types de dommages. En premier lieu, elle peut invoquer des pertes (ex : argent dépensée pour se rendre à des réunions en lien avec le contrat). D’un autre côté, la victime peut être tentée d’invoquer des biens manqués qui sont des avantages qu’elle aurait pu avoir mais qu’elle n’a pas eu. 
+Tu es un générateur de flashcards.
+Tu crées uniquement des flashcards basées sur le texte fourni par l’utilisateur, sans ajouter d’informations extérieures.
+
+Voici le texte a utiliser : 
+```md
+
+```
+1) Le droit romain
+```
+Il n’existait pas de droit commun des contrats, par opposition à aujourd’hui. Seuls les contrats connus
+
+par la loi pouvaient donner lieu a une traduction en justice, on ne pouvait en créer de toute pièce.
+
+Pour qu’un acte soit considéré comme un contrat valable il devait passer par le respect de certaines
+
+formalités. Ce droit des contrats va **s’assouplir** au fur et à mesure des contrats de Rome on va
+
+reconnaître de plus en plus de contrats, on va reconnaîtrez certaines formalités comme facultatives. Il
+
+y a trois types de contrats :
+
+<>- **Les actas verbis** qui **dépendent de la prononciation de certaines paroles solennelles** pour
+    que le contrat soit valable
+- **Les actas literis** qui dépendaient **d’une mention écrite**
+- **Les actas re** qui n’étaient valables que **si une chose était remise.**</>
+
+Le droit romain a fourni au droit français des contras un nombre important de **concepts** et
+
+**techniques** mais en revanche il ne lui a pas donné son **esprit** qui est plutôt issu de **l’ancien droit**
+
+**français**
+```
 
 
-Il s’agit des gains qu’elle aurait pu obtenir du contrat s’il avait été conclu mais également le fait d’avoir pu éventuellement manquer d’autres opportunités en raison du contrat dont elle pensait qu’il aboutirait. Certaines décisions ont décidé d’indemniser l’ensemble des préjudices puis la solution a changé dans un arrêt du 26 novembre 2003 rendu par la chambre commercial, l’arrêt Manoukian. La Cour de cassation a considéré que tous les préjudices étaient indemnisables sauf les avantages escomptés du contrat. C'est aujourd’hui l’article 1112 alinéa 3 du CC. Cela a pour but de préserver la liberté contractuelle, tant que le contrat n’a pas été conclu on ne peut pas bénéficier des avantages de ce contrat. De plus, si on a peur qu’en cas de rupture des pourparlers de devoir dédommager le partenaire, alors il y a un risque de ne plus faire de pourparlers. Enfin, certains auteurs considéraient que la victime dans ce genre d’hypothèses, peut très bien se satisfaire de l’indemnisation du fait qu’elle ait pu perdre l’opportunité d’un contrat avec quelqu’un d’autre. C'est cependant discutable comme argument. Tout d’abord, lorsqu’on condamne une personne à indemniser son partenaire de pourparlers on ne force pas cette personne à conclure le contrat. Ensuite, on constate que l’importance socio-économique de l’activité contractuelle est telle que c'est excessif de dire qu’une décision va dissuader de conclure d’entamer des pourparlers, de conclure un contrat. Enfin, en droit de la responsabilité il existe l’indemnisation de la perte de chance.
+# Tâche de l’IA :
+
+Identifier chaque contenu entre < >.
+
+Lire tout le texte fourni (le contenu entre < > et le reste).
+
+Créer une flashcard par balise < >, uniquement à partir des mots du texte.
+
+Utiliser les mots du texte autour du concept encadré pour formuler la question et la réponse.
+
+Ne rien inventer ni compléter avec des connaissances externes.
+
+# Format de sortie obligatoire :
+
+**Question :**  
+[Formulation de la question à partir du texte fourni]
+
+**Réponse :**  
+[Réponse rédigée uniquement avec les informations contenues dans le texte]
+
+# Exemple :
+
+Texte d’entrée :
+Le <cœur> est un organe qui pompe le sang dans tout le corps.
+
+Sortie :
+Question :
+Quel est l’organe qui pompe le sang dans tout le corps ?
+Réponse :
+Le cœur.

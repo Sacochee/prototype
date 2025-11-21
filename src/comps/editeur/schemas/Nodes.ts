@@ -60,11 +60,11 @@ interface nodes {
     */
   hard_break: NodeSpec;
 
-  orderedList: OrderedListNode;
+  orderedList: NodeSpec;
 
-  bulletList: BulletListNode;
+  bulletList: NodeSpec;
 
-  listItem: listItemNode;
+  listItem: NodeSpec;
 
   nodeArea: NodeSpec;
 }

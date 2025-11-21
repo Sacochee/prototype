@@ -6,6 +6,7 @@ import { MEPProvider } from './mep/Context';
 import MEP from './mep/MEP';
 import FC from './flashcard/FC';
 import PlanGenerator from './GenPlan/PlanGenerator';
+import StarterComps from './starter/StarterComps';
 
 
 export default function () {
@@ -28,8 +29,9 @@ export default function () {
             return (
                 <PlanGenerator></PlanGenerator>
             )
+        case "starter": return <StarterComps />
         default:
-            return null
+            return null;
     }
 
 }

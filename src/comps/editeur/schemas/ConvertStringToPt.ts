@@ -1,6 +1,6 @@
 export default function toPt(str: string) {
   if (!str) return 0;
-  const match = /^([\d.]+)(px|pt|em|rem)?$/i.exec(str.trim());
+  const match = /^([\d.]+)(px|pt|em|rem|cm|mm)?$/i.exec(str.trim());
   if (!match) return 0;
 
   const value = parseFloat(match[1]);
