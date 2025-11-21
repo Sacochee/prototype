@@ -23,7 +23,7 @@ export async function POST(req: Request) {
     await new Promise((resolve, reject) => {
       execFile(
         "python",
-        [unoconvPath, "-f", "html", "-o", outputPath, inputPath],
+        [unoconvPath, "-f", "html", "-o", outputPath, "--port 2002", inputPath],
         (err) => (err ? reject(err) : resolve(() => {}))
       );
     });
